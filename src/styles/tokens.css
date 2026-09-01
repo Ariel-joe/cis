@@ -1,0 +1,47 @@
+/*
+  Design tokens for the Brookhouse IDEALS site.
+  Palette is drawn from the school crest and the IDEALS artwork itself:
+  crest maroon + gold, savanna green, highland sky blue, Maasai shield red,
+  and warm parchment (field-journal paper, not generic AI cream).
+*/
+
+:root {
+  /* Base */
+  --color-ink: #201a14;
+  --color-ink-soft: #4a4033;
+  --color-parchment: #fff;
+  --color-parchment-deep: #e2d9be;
+  --color-parchment-line: #d8cca4;
+  --color-paper: #faf7ee;
+
+  /* Crest */
+  --color-maroon: #7a1f2b;
+  --color-maroon-deep: #591620;
+  --color-gold: #c9a227;
+  --color-gold-soft: #e0c469;
+
+  /* Pillar accents (I D E A L S) */
+  --pillar-internationalism: #9c6b22;
+  --pillar-democracy: #c08a2e;
+  --pillar-environmentalism: #3f6b35;
+  --pillar-adventure: #3e6e8e;
+  --pillar-leadership: #9e1b1b;
+  --pillar-service: #201a14;
+
+  /* Type */
+  --font-display: "Newsreader", "Iowan Old Style", "Georgia", serif;
+  --font-body: "Work Sans", "Segoe UI", sans-serif;
+
+  /* Scale */
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.6rem, 1.4rem + 0.9vw, 2rem);
+  --step-3: clamp(2.2rem, 1.8rem + 1.8vw, 3.2rem);
+  --step-4: clamp(3rem, 2.4rem + 2.8vw, 4.6rem);
+
+  /* Radius / motion */
+  --radius-crest: 999px;
+  --radius-card: 14px;
+  --ease-orbit: cubic-bezier(0.22, 1, 0.36, 1);
+}

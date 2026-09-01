@@ -1,0 +1,77 @@
+.bubble {
+  --accent: var(--color-maroon);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 118px;
+  height: 118px;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background: var(--color-paper);
+  border: 1.5px solid var(--accent);
+  text-decoration: none;
+  color: var(--color-ink);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation: bubble-in 480ms var(--ease-orbit) both, bubble-float 7s ease-in-out infinite;
+  animation-delay: var(--delay), calc(var(--delay) + 480ms);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.bubble:hover,
+.bubble:focus-visible {
+  box-shadow: 0 6px 18px -8px var(--accent);
+}
+
+.bubble__label {
+  font-size: var(--step--1);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.bubble--placeholder {
+  border-style: dashed;
+  border-color: var(--color-ink-soft);
+  opacity: 0.72;
+}
+
+.bubble--placeholder .bubble__label {
+  color: var(--color-ink-soft);
+}
+
+@keyframes bubble-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1);
+  }
+}
+
+@keyframes bubble-float {
+  0%,
+  100% {
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) translateY(0);
+  }
+  50% {
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble {
+    animation: none;
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+  }
+}
+
+@media (max-width: 640px) {
+  .bubble {
+    width: 92px;
+    height: 92px;
+  }
+}

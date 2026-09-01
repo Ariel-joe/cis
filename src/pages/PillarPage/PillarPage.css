@@ -1,0 +1,123 @@
+.pillar-page {
+  padding-block: 1.75rem 3rem;
+}
+
+.pillar-page__crumb {
+  margin-bottom: 1.5rem;
+}
+
+.pillar-page__crumb a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+
+.orbit {
+  position: relative;
+  width: 680px;
+  max-width: 100%;
+  height: 640px;
+  margin-inline: auto;
+}
+
+.orbit__lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.orbit__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: min(300px, 78vw);
+  text-align: center;
+}
+
+.orbit__center-text h1 {
+  font-size: var(--step-1);
+  margin-bottom: 0.4rem;
+}
+
+.orbit__center-text p {
+  font-size: var(--step--1);
+  color: var(--color-ink-soft);
+  max-width: 30ch;
+  margin-inline: auto;
+}
+
+.pillar-page__siblings {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.pillar-page__sibling {
+  --accent: var(--color-maroon);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.55;
+  transition: opacity 150ms ease;
+}
+
+.pillar-page__sibling:hover,
+.pillar-page__sibling.is-active {
+  opacity: 1;
+  background: var(--accent);
+  color: var(--color-paper);
+}
+
+@media (max-width: 720px) {
+  .orbit {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .orbit__lines {
+    display: none;
+  }
+
+  .orbit__center {
+    position: static;
+    transform: none;
+  }
+
+  .bubble {
+    position: static;
+    transform: none !important;
+    animation: none !important;
+    margin-inline: auto;
+  }
+
+  .orbit > .bubble + .bubble {
+    margin-top: -0.5rem;
+  }
+
+  .orbit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 1.25rem;
+  }
+
+  .orbit__center {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,16 @@
+.bubble-page {
+  padding-block: 1.75rem 3rem;
+}
+
+.bubble-page__crumb {
+  margin-bottom: 1rem;
+}
+
+.bubble-page__crumb a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+
+.bubble-page h1 {
+  font-size: var(--step-3);
+}

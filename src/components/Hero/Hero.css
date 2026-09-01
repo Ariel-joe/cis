@@ -1,0 +1,13 @@
+.hero {
+  padding-block: clamp(1.5rem, 4vw, 3rem) 1rem;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image {
+  width: min(760px, 100%);
+  height: auto;
+}
