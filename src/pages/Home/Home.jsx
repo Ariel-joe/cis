@@ -19,7 +19,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="container ring-section" aria-label="The six IDEALS pillars">
+      {/* <section className="container ring-section" aria-label="The six IDEALS pillars">
         <div className="ring">
           <div className="ring__hub">
             <span>Round</span>
@@ -62,7 +62,7 @@ export default function Home() {
           </a>
           .
         </p>
-      </section>
+      </section> */}
     </>
   );
 }

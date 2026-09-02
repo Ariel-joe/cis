@@ -1,3 +1,10 @@
+import heroI from "../assets/images/hero-letters/i.png";
+import heroD from "../assets/images/hero-letters/d.png";
+import heroE from "../assets/images/hero-letters/e.png";
+import heroA from "../assets/images/hero-letters/a.png";
+import heroL from "../assets/images/hero-letters/l.png";
+import heroS from "../assets/images/hero-letters/s.png";
+
 /**
  * Single source of truth for the IDEALS site content.
  *
@@ -12,10 +19,18 @@
  * A bubble with `placeholder: true` renders with a dashed "add content" look
  * so it's obvious which ones still need real content.
  *
- * `image`: path to this letter's artwork, served from /public so you can
- * just drop a new file in public/images/letters/ with the same name (or
- * change the path here) — no other code needs to change. Leave it as
- * `null` to fall back to the styled-text letter.
+ * `image`: path to this letter's artwork used on the ring/orbit medallions
+ * (Home page and the pillar page's center circle), served from /public so
+ * you can just drop a new file in public/images/letters/ with the same
+ * name — no other code needs to change. Leave it as `null` to fall back
+ * to the styled-text letter.
+ *
+ * `heroImage` / `heroPosition`: the same letter's artwork as it sits on
+ * top of the hero banner (see Hero.jsx), positioned to match where it
+ * falls in the original full IDEALS artwork. `heroPosition` values are
+ * percentages of the hero image's width/height, so they stay lined up
+ * at any screen size. Nudge the numbers slightly if a letter ever looks
+ * off after you swap in a different hero background.
  */
 
 export const pillars = [
@@ -23,7 +38,9 @@ export const pillars = [
     slug: "internationalism",
     letter: "I",
     title: "Internationalism",
-    image: "/images/letters/i.png",
+    image: "/images/letters/internationalism.svg",
+    heroImage: heroI,
+    heroPosition: { left: "2.4%", top: "33.2%", width: "14.5%", height: "37.9%" },
     accentVar: "--pillar-internationalism",
     summary:
       "Fostering a global perspective, cross-cultural understanding, and appreciation for diversity among students from over 50 nations.",
@@ -38,7 +55,9 @@ export const pillars = [
     slug: "democracy",
     letter: "D",
     title: "Democracy",
-    image: "/images/letters/d.png",
+    image: "/images/letters/democracy.svg",
+    heroImage: heroD,
+    heroPosition: { left: "14.4%", top: "46.0%", width: "16.9%", height: "22.4%" },
     accentVar: "--pillar-democracy",
     summary:
       "Encouraging active participation, shared responsibility, and freedom of expression within the school governance and community.",
@@ -53,7 +72,9 @@ export const pillars = [
     slug: "environmentalism",
     letter: "E",
     title: "Environmentalism",
-    image: "/images/letters/e.png",
+    image: "/images/letters/environmentalism.svg",
+    heroImage: heroE,
+    heroPosition: { left: "31.2%", top: "43.9%", width: "16.0%", height: "24.6%" },
     accentVar: "--pillar-environmentalism",
     summary:
       "Building a deep personal awareness of environmental sustainability and ecological responsibility.",
@@ -68,7 +89,9 @@ export const pillars = [
     slug: "adventure",
     letter: "A",
     title: "Adventure",
-    image: "/images/letters/a.png",
+    image: "/images/letters/adventure.svg",
+    heroImage: heroA,
+    heroPosition: { left: "47.6%", top: "46.5%", width: "16.6%", height: "21.9%" },
     accentVar: "--pillar-adventure",
     summary:
       "Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
@@ -83,7 +106,9 @@ export const pillars = [
     slug: "leadership",
     letter: "L",
     title: "Leadership",
-    image: "/images/letters/L.png",
+    image: "/images/letters/leadership.svg",
+    heroImage: heroL,
+    heroPosition: { left: "63.5%", top: "46.3%", width: "17.0%", height: "22.2%" },
     accentVar: "--pillar-leadership",
     summary:
       "Cultivating self-discipline, initiative, and collaborative skills to guide and serve others effectively.",
@@ -98,7 +123,9 @@ export const pillars = [
     slug: "service",
     letter: "S",
     title: "Service",
-    image: "/images/letters/s.png",
+    image: "/images/letters/service.svg",
+    heroImage: heroS,
+    heroPosition: { left: "79.7%", top: "46.5%", width: "14.7%", height: "22.0%" },
     accentVar: "--pillar-service",
     summary:
       "Committing to community engagement and humanitarian projects locally and internationally, such as Round Square International Service projects.",
