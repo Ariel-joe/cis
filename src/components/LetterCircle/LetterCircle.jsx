@@ -5,7 +5,7 @@ import "./LetterCircle.css";
  * Pass an `image` path (see src/data/ideals.js) to show real artwork;
  * without one it falls back to the styled letter glyph.
  */
-export default function LetterCircle({ letter, image, accentVar, size = "md" }) {
+export default function LetterCircle({ letter, image, accentVar, size = "sm" }) {
   return (
     <div
       className={`letter-circle letter-circle--${size}`}

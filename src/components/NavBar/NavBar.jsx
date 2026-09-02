@@ -10,13 +10,13 @@ export default function NavBar() {
           <img
           className="navbar__image"
           src={Logo}
-          width="270"
-          height="50"
+          width="260"
+          height="60"
           alt="navbar logo"
         />
         </Link>
         {/* <span className="navbar__tag">Inspired by the Round Square</span> */}
       </div>
-    </header>
+    </header> 
   );
 }
