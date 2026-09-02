@@ -4,7 +4,14 @@ import Bubble from "../../components/Bubble/Bubble";
 import { getPillar, pillars } from "../../data/ideals";
 import "./PillarPage.css";
 
-const RADIUS = 230;
+/**
+ * Radius grows with the number of bubbles so they don't crowd each other
+ * on pillars with many entries, capped so the layout still fits the orbit
+ * box on desktop.
+ */
+function orbitRadius(count) {
+  return Math.max(210, Math.min(280, 150 + count * 18));
+}
 
 export default function PillarPage() {
   const { pillarSlug } = useParams();
@@ -12,10 +19,11 @@ export default function PillarPage() {
 
   if (!pillar) return <Navigate to="/" replace />;
 
+  const radius = orbitRadius(pillar.bubbles.length);
   const positions = pillar.bubbles.map((_, index) => {
     const angle = (360 / pillar.bubbles.length) * index - 90;
     const rad = (angle * Math.PI) / 180;
-    return { x: Math.cos(rad) * RADIUS, y: Math.sin(rad) * RADIUS };
+    return { x: Math.cos(rad) * radius, y: Math.sin(rad) * radius };
   });
 
   return (
