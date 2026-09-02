@@ -149,6 +149,8 @@ export const pillars = [
       { slug: "cmt-and-board", label: "CMT and Board", placeholder: false, media: [] },
       { slug: "minutes", label: "Minutes", placeholder: false, media: [] },
       { slug: "students", label: "Students", placeholder: false, media: [] },
+      { slug: "educators-and-staff", label: "Educators and Staff", placeholder: false, media: [] },
+      { slug: "Curriculum", label: "Curriculum", placeholder: false, media: [] },
     ],
   },
 ];
