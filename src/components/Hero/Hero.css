@@ -46,3 +46,23 @@
   outline-offset: 4px;
   border-radius: 6px;
 }
+
+.hero__caption {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: clamp(0.90rem, 2.0vw, 1.0rem);
+  color: var(--color-ink);
+  transition: color 150ms ease;
+}
+
+.hero__caption:hover,
+.hero__caption:focus-visible {
+  color: var(--color-maroon);
+  text-decoration: underline;
+}

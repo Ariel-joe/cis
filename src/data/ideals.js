@@ -31,7 +31,14 @@ import heroS from "../assets/images/hero-letters/s.png";
  * percentages of the hero image's width/height, so they stay lined up
  * at any screen size. Nudge the numbers slightly if a letter ever looks
  * off after you swap in a different hero background.
+ *
+ * `heroCaptionLeft`: horizontal center (as a % of the hero width) for
+ * this pillar's clickable caption word underneath the letters — matches
+ * where each word sat in the original artwork. The row's vertical
+ * position is shared by all six and lives in `heroCaptionTop` below.
  */
+
+export const heroCaptionTop = "86.1%";
 
 export const pillars = [
   {
@@ -41,6 +48,7 @@ export const pillars = [
     image: "/images/letters/internationalism.svg",
     heroImage: heroI,
     heroPosition: { left: "2.4%", top: "33.2%", width: "14.5%", height: "37.9%" },
+    heroCaptionLeft: "11.4%",
     accentVar: "--pillar-internationalism",
     summary:
       "Fostering a global perspective, cross-cultural understanding, and appreciation for diversity among students from over 50 nations.",
@@ -58,6 +66,7 @@ export const pillars = [
     image: "/images/letters/democracy.svg",
     heroImage: heroD,
     heroPosition: { left: "14.4%", top: "46.0%", width: "16.9%", height: "22.4%" },
+    heroCaptionLeft: "30.1%",
     accentVar: "--pillar-democracy",
     summary:
       "Encouraging active participation, shared responsibility, and freedom of expression within the school governance and community.",
@@ -75,6 +84,7 @@ export const pillars = [
     image: "/images/letters/environmentalism.svg",
     heroImage: heroE,
     heroPosition: { left: "31.2%", top: "43.9%", width: "16.0%", height: "24.6%" },
+    heroCaptionLeft: "48.1%",
     accentVar: "--pillar-environmentalism",
     summary:
       "Building a deep personal awareness of environmental sustainability and ecological responsibility.",
@@ -92,6 +102,7 @@ export const pillars = [
     image: "/images/letters/adventure.svg",
     heroImage: heroA,
     heroPosition: { left: "47.6%", top: "46.5%", width: "16.6%", height: "21.9%" },
+    heroCaptionLeft: "66.1%",
     accentVar: "--pillar-adventure",
     summary:
       "Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
@@ -109,6 +120,7 @@ export const pillars = [
     image: "/images/letters/leadership.svg",
     heroImage: heroL,
     heroPosition: { left: "63.5%", top: "46.3%", width: "17.0%", height: "22.2%" },
+    heroCaptionLeft: "80.7%",
     accentVar: "--pillar-leadership",
     summary:
       "Cultivating self-discipline, initiative, and collaborative skills to guide and serve others effectively.",
@@ -126,6 +138,7 @@ export const pillars = [
     image: "/images/letters/service.svg",
     heroImage: heroS,
     heroPosition: { left: "79.7%", top: "46.5%", width: "14.7%", height: "22.0%" },
+    heroCaptionLeft: "93.2%",
     accentVar: "--pillar-service",
     summary:
       "Committing to community engagement and humanitarian projects locally and internationally, such as Round Square International Service projects.",

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import heroBackground from "../../assets/images/Hero_NoIDEALS.png";
-import { pillars } from "../../data/ideals";
+import { pillars, heroCaptionTop } from "../../data/ideals";
 import "./Hero.css";
 
 export default function Hero() {
@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero__inner">
         <div className="hero__frame">
-          <img className="hero__background" src={heroBackground} alt="Logo" />
+          <img className="hero__background" src={heroBackground} alt="Inspired by the Round Square" />
 
           {pillars.map((pillar) => (
             <Link
@@ -20,6 +20,17 @@ export default function Hero() {
               title={pillar.title}
             >
               <img src={pillar.heroImage} alt={pillar.letter} />
+            </Link>
+          ))}
+
+          {pillars.map((pillar) => (
+            <Link
+              key={`${pillar.slug}-caption`}
+              to={`/pillar/${pillar.slug}`}
+              className="hero__caption"
+              style={{ left: pillar.heroCaptionLeft, top: heroCaptionTop }}
+            >
+              {pillar.title}
             </Link>
           ))}
         </div>
