@@ -10,8 +10,8 @@ export default function NavBar() {
           <img
           className="navbar__image"
           src={Logo}
-          width="260"
-          height="60"
+          width="210"
+          height="45"
           alt="navbar logo"
         />
         </Link>

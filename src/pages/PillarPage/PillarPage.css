@@ -19,36 +19,11 @@
   margin-inline: auto;
 }
 
-.orbit__lines {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .orbit__center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.9rem;
-  width: min(300px, 78vw);
-  text-align: center;
-}
-
-.orbit__center-text h1 {
-  font-size: var(--step-1);
-  margin-bottom: 0.4rem;
-}
-
-.orbit__center-text p {
-  font-size: var(--step--1);
-  color: var(--color-ink-soft);
-  max-width: 30ch;
-  margin-inline: auto;
 }
 
 .pillar-page__siblings {
@@ -84,33 +59,6 @@
 @media (max-width: 720px) {
   .orbit {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.4rem;
-  }
-
-  .orbit__lines {
-    display: none;
-  }
-
-  .orbit__center {
-    position: static;
-    transform: none;
-  }
-
-  .bubble {
-    position: static;
-    transform: none !important;
-    animation: none !important;
-    margin-inline: auto;
-  }
-
-  .orbit > .bubble + .bubble {
-    margin-top: -0.5rem;
-  }
-
-  .orbit {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -118,6 +66,15 @@
   }
 
   .orbit__center {
+    position: static;
+    transform: none;
     grid-column: 1 / -1;
+  }
+
+  .bubble {
+    position: static;
+    transform: none !important;
+    animation: none !important;
+    margin-inline: auto;
   }
 }

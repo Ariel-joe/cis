@@ -25,32 +25,16 @@ export default function PillarPage() {
       </nav>
 
       <div className="orbit">
-        <svg className="orbit__lines" viewBox="-300 -300 600 600" aria-hidden="true">
-          {positions.map((pos, i) => (
-            <line
-              key={pillar.bubbles[i].slug}
-              x1="0"
-              y1="0"
-              x2={pos.x}
-              y2={pos.y}
-              stroke={`var(${pillar.accentVar})`}
-              strokeOpacity="0.35"
-              strokeWidth="1"
-            />
-          ))}
-        </svg>
-
         <div className="orbit__center">
           <LetterCircle
             letter={pillar.letter}
-            image={pillar.image}
+            image={pillar.heroImage}
             accentVar={pillar.accentVar}
             size="lg"
-          />
-          <div className="orbit__center-text">
+          >
             <h1>{pillar.showcaseTitle}</h1>
             <p>{pillar.summary}</p>
-          </div>
+          </LetterCircle>
         </div>
 
         {pillar.bubbles.map((bubble, index) => (
