@@ -9,15 +9,16 @@ const RADIUS = 250;
 export default function Home() {
   return (
     <>
-      <Hero />
-
-      <section className="container intro">
+            <section className="container intro">
         <p>
           The IDEALS at Brookhouse Schools are the six core pillars of the
           Round Square international network philosophy, focusing on
           character development and servant leadership.
         </p>
       </section>
+      <Hero />
+
+
 
       {/* <section className="container ring-section" aria-label="The six IDEALS pillars">
         <div className="ring">

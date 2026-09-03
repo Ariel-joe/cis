@@ -15,6 +15,7 @@ import heroS from "../assets/images/hero-letters/s.png";
  * media item shape: { type: "image" | "document" | "video", src, caption }
  *   - image / video: src is a URL or an imported asset
  *   - document: src is a URL to the file (pdf, docx, etc.)
+ * 
  *
  * A bubble with `placeholder: true` renders with a dashed "add content" look
  * so it's obvious which ones still need real content.
@@ -144,12 +145,18 @@ export const pillars = [
       "Committing to community engagement and humanitarian projects locally and internationally, such as Round Square International Service projects.",
     showcaseTitle: "Community Voice Showcase",
     bubbles: [
-      { slug: "alumni", label: "Alumni", placeholder: false, media: [] },
-      { slug: "bptsa", label: "BPTSA", placeholder: false, media: [] },
+      { slug: "alumni", label: "Alumni", placeholder: false, media: [
+        "Alumni/Kenyan-Entrepreneur-Turns-Plastic-Bottles-Into-Eco-Bricks.mp4", "Alumni/Women-and-Power_ Meet-the-woman-up-cycling-plastic-into-eco-bricks.mp4"
+      ] },
+      { slug: "bptsa", label: "BPTSA", placeholder: false, media: [
+        "BSPTA/IMG_0848.jpg", "BSPTA/IMG_0860.jpg", "BSPTA/IMG_0988.jpg", "BSPTA/JSS-Press-Release-A-Finish.pdf" 
+      ] },
       { slug: "cmt-and-board", label: "CMT and Board", placeholder: false, media: [] },
       { slug: "minutes", label: "Minutes", placeholder: false, media: [] },
       { slug: "students", label: "Students", placeholder: false, media: [] },
-      { slug: "educators-and-staff", label: "Educators and Staff", placeholder: false, media: [] },
+      { slug: "educators-and-staff", label: "Educators and Staff", placeholder: false, media: [
+        "Educators-and-staff/4Q7A4071.jpg", "Educators-and-staff/4Q7A6732.jpg", "Educators-and-staff/4Q7A6779.jpg", "Educators-and-staff/4Q7A6939.jpg" 
+      ] },
       { slug: "Curriculum", label: "Curriculum", placeholder: false, media: [] },
     ],
   },
