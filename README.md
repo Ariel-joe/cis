@@ -1,4 +1,4 @@
-# Brookhouse IDEALS site
+# Brookhouse IDEALS microsite
 
 A minimal Vite + React site for Brookhouse School's IDEALS pages.
 

@@ -149,15 +149,19 @@ export const pillars = [
         "Alumni/Kenyan-Entrepreneur-Turns-Plastic-Bottles-Into-Eco-Bricks.mp4", "Alumni/Women-and-Power_ Meet-the-woman-up-cycling-plastic-into-eco-bricks.mp4"
       ] },
       { slug: "bptsa", label: "BPTSA", placeholder: false, media: [
-        "BSPTA/IMG_0848.jpg", "BSPTA/IMG_0860.jpg", "BSPTA/IMG_0988.jpg", "BSPTA/JSS-Press-Release-A-Finish.pdf" 
+        "BSPTA/IMG_0848.jpg", "BSPTA/IMG_0860.jpg", "BSPTA/IMG_0988.jpg", "BSPTA/JSS-Press-Release-A-Finish.pdf", "BSPTA/Image2026.jpeg" 
       ] },
-      { slug: "cmt-and-board", label: "CMT and Board", placeholder: false, media: [] },
+      { slug: "cmt-and-board", label: "CMT and Board", placeholder: false, media: [
+        "CMT-and-Board/4Q7A6670.jpg", "CMT-and-Board/4Q7A6671.jpg"
+      ] },
       { slug: "minutes", label: "Minutes", placeholder: false, media: [] },
       { slug: "students", label: "Students", placeholder: false, media: [] },
       { slug: "educators-and-staff", label: "Educators and Staff", placeholder: false, media: [
         "Educators-and-staff/4Q7A4071.jpg", "Educators-and-staff/4Q7A6732.jpg", "Educators-and-staff/4Q7A6779.jpg", "Educators-and-staff/4Q7A6939.jpg" 
       ] },
-      { slug: "Curriculum", label: "Curriculum", placeholder: false, media: [] },
+      { slug: "Curriculum", label: "Curriculum", placeholder: false, media: [
+        "Curriculum/Year-9-Citizenship-Schemes-of-Work.docx", "Curriculum/SOW-Preamble-Year-9-Citizenship.docx", "Curriculum/Citizenship-Overview-9.docx", 
+      ] },
     ],
   },
 ];
