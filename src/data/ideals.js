@@ -157,7 +157,7 @@ export const pillars = [
       { slug: "minutes", label: "Minutes", placeholder: false, media: [] },
       { slug: "students", label: "Students", placeholder: false, media: [] },
       { slug: "educators-and-staff", label: "Educators and Staff", placeholder: false, media: [
-        "Educators-and-staff/4Q7A4071.jpg", "Educators-and-staff/4Q7A6732.jpg", "Educators-and-staff/4Q7A6779.jpg", "Educators-and-staff/4Q7A6939.jpg" 
+        "Educators-and-staff/4Q7A4071.jpg", "Educators-and-staff/4Q7A6732.jpg", "Educators-and-staff/4Q7A6779.jpg", "Educators-and-staff/4Q7A6939.jpg", "Educators-and-staff/11.jpg", "Educators-and-staff/12.jpg" 
       ] },
       { slug: "Curriculum", label: "Curriculum", placeholder: false, media: [
         "Curriculum/Year-9-Citizenship-Schemes-of-Work.docx", "Curriculum/SOW-Preamble-Year-9-Citizenship.docx", "Curriculum/Citizenship-Overview-9.docx", 

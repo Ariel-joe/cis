@@ -42,6 +42,6 @@
 
   /* Radius / motion */
   --radius-crest: 999px;
-  --radius-card: 14px;
+  --radius-card: 9px;
   --ease-orbit: cubic-bezier(0.22, 1, 0.36, 1);
 }

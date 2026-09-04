@@ -89,7 +89,7 @@ function ImageTile({ item, onOpen }) {
       <button type="button" className="media-item__button" onClick={onOpen} aria-label={"Open " + caption}>
         <img src={item.src} alt={caption} />
       </button>
-      <figcaption>{caption}</figcaption>
+      {/* <figcaption>{caption}</figcaption> */}
     </figure>
   );
 }
@@ -122,12 +122,13 @@ function DocumentTile({ item }) {
   return (
     <figure className="media-item media-item--doc">
       <a className="media-item__doc-link" href={item.src} download={download} aria-label={"Download " + caption}>
+        {/* <span>{caption}</span> */}
         <span className="media-item__doc-icon" style={iconStyle}>
           <span className="media-item__doc-ext">{ext.toUpperCase()}</span>
         </span>
-        <span className="media-item__doc-hint">Click to download</span>
+        <span className="media-item__doc-hint">{caption}</span>
       </a>
-      <figcaption>{caption}</figcaption>
+      {/* <figcaption>{caption}</figcaption> */}
     </figure>
   );
 }
