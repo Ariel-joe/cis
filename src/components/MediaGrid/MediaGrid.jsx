@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./MediaGrid.css";
 
 /* Guess a filename from a src URL/path — used as a caption fallback so
@@ -57,9 +57,11 @@ function normalizeItem(raw) {
     return { type: inferType(src), src, caption: undefined };
   }
   const src = normalizeSrc(raw.src);
+  const poster = raw.poster ? normalizeSrc(raw.poster) : undefined;
   return {
     ...raw,
     src,
+    poster,
     type: raw.type || inferType(src),
   };
 }
@@ -83,7 +85,24 @@ function captionFor(item) {
 }
 
 function ImageTile({ item, onOpen }) {
+  const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef(null);
   const caption = captionFor(item);
+  const markReady = () => setLoaded(true);
+
+  /* If the image is already cached the onLoad event may fire before React
+     attaches the handler; check `complete` on mount to avoid a stuck
+     skeleton. */
+  useEffect(() => {
+    if (
+      imgRef.current &&
+      imgRef.current.complete &&
+      imgRef.current.naturalWidth > 0
+    ) {
+      setLoaded(true);
+    }
+  }, []);
+
   return (
     <figure className="media-item media-item--visual">
       <button
@@ -92,7 +111,18 @@ function ImageTile({ item, onOpen }) {
         onClick={onOpen}
         aria-label={"Open " + caption}
       >
-        <img src={item.src} alt={caption} />
+        {!loaded && (
+          <span className="media-item__skeleton" aria-hidden="true" />
+        )}
+        <img
+          ref={imgRef}
+          src={item.src}
+          alt={caption}
+          loading="lazy"
+          onLoad={markReady}
+          onError={markReady}
+          className={loaded ? "is-loaded" : ""}
+        />
       </button>
       <figcaption>{caption}</figcaption>
     </figure>
@@ -100,8 +130,14 @@ function ImageTile({ item, onOpen }) {
 }
 
 function VideoTile({ item, onOpen }) {
+  const [loaded, setLoaded] = useState(false);
   const caption = captionFor(item);
   const isFile = VIDEO_EXT.has(fileExtension(item.src));
+  const hasPoster = Boolean(item.poster);
+  const markReady = () => setLoaded(true);
+  const showSpinner = isFile && !hasPoster && !loaded;
+  const showPlay = !isFile || hasPoster || loaded;
+
   return (
     <figure className="media-item media-item--visual">
       <button
@@ -110,14 +146,31 @@ function VideoTile({ item, onOpen }) {
         onClick={onOpen}
         aria-label={"Play " + caption}
       >
+        {!loaded && !hasPoster && (
+          <span className="media-item__skeleton" aria-hidden="true" />
+        )}
         {isFile ? (
-          <video src={item.src} preload="metadata" muted playsInline />
+          <video
+            src={item.src}
+            poster={item.poster}
+            preload={hasPoster ? "none" : "metadata"}
+            muted
+            playsInline
+            onLoadedMetadata={markReady}
+            onError={markReady}
+            className={loaded || hasPoster ? "is-loaded" : ""}
+          />
         ) : (
           <div className="media-item__video-placeholder" />
         )}
-        <span className="media-item__play" aria-hidden="true">
-          {"\u25B6"}
-        </span>
+        {showSpinner && (
+          <span className="media-item__spinner" aria-hidden="true" />
+        )}
+        {showPlay && (
+          <span className="media-item__play" aria-hidden="true">
+            {"\u25B6"}
+          </span>
+        )}
       </button>
       <figcaption>{caption}</figcaption>
     </figure>
@@ -150,8 +203,11 @@ function DocumentTile({ item }) {
 }
 
 function Lightbox({ item, onClose }) {
+  const [mediaLoaded, setMediaLoaded] = useState(false);
+
   useEffect(() => {
     if (!item) return undefined;
+    setMediaLoaded(false);
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
     };
@@ -167,6 +223,7 @@ function Lightbox({ item, onClose }) {
   if (!item) return null;
   const caption = captionFor(item);
   const stopBubble = (e) => e.stopPropagation();
+  const markReady = () => setMediaLoaded(true);
 
   return (
     <div
@@ -185,11 +242,29 @@ function Lightbox({ item, onClose }) {
         {"\u00D7"}
       </button>
       <div className="lightbox__stage" onClick={stopBubble}>
-        {item.type === "image" ? (
-          <img src={item.src} alt={caption} />
-        ) : (
-          <video src={item.src} controls autoPlay playsInline />
-        )}
+        <div className="lightbox__media">
+          {item.type === "image" ? (
+            <img
+              src={item.src}
+              alt={caption}
+              onLoad={markReady}
+              onError={markReady}
+            />
+          ) : (
+            <video
+              src={item.src}
+              poster={item.poster}
+              controls
+              autoPlay
+              playsInline
+              onLoadedData={markReady}
+              onError={markReady}
+            />
+          )}
+          {!mediaLoaded && (
+            <span className="lightbox__spinner" aria-hidden="true" />
+          )}
+        </div>
         <p className="lightbox__caption">{caption}</p>
       </div>
     </div>
@@ -204,7 +279,7 @@ export default function MediaGrid({ items, accentVar, label }) {
     const emptyStyle = accentVar
       ? { "--empty-accent": "var(" + accentVar + ")" }
       : undefined;
-    const heading = label ? label + "" : "Coming soon";
+    const heading = label ? label + " is on the way" : "Coming soon";
     return (
       <div className="media-grid__empty" style={emptyStyle}>
         <svg
@@ -250,7 +325,11 @@ export default function MediaGrid({ items, accentVar, label }) {
           return <DocumentTile key={i} item={item} />;
         })}
       </div>
-      <Lightbox item={openItem} onClose={closeLightbox} />
+      <Lightbox
+        key={openItem ? openItem.src : "closed"}
+        item={openItem}
+        onClose={closeLightbox}
+      />
     </>
   );
 }
