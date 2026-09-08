@@ -13,12 +13,17 @@ export default function BubblePage() {
     <section className="container bubble-page">
       <nav className="bubble-page__crumb eyebrow-note">
         <Link to="/">IDEALS</Link> /{" "}
-        <Link to={`/pillar/${pillar.slug}`}>{pillar.title}</Link> / {bubble.label}
+        <Link to={`/pillar/${pillar.slug}`}>{pillar.title}</Link> /{" "}
+        {bubble.label}
       </nav>
 
       <h1 style={{ color: `var(${pillar.accentVar})` }}>{bubble.label}</h1>
 
-      <MediaGrid items={bubble.media} />
+      <MediaGrid
+        items={bubble.media}
+        accentVar={pillar.accentVar}
+        label={bubble.label}
+      />
     </section>
   );
 }

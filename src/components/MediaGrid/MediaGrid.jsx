@@ -86,10 +86,15 @@ function ImageTile({ item, onOpen }) {
   const caption = captionFor(item);
   return (
     <figure className="media-item media-item--visual">
-      <button type="button" className="media-item__button" onClick={onOpen} aria-label={"Open " + caption}>
+      <button
+        type="button"
+        className="media-item__button"
+        onClick={onOpen}
+        aria-label={"Open " + caption}
+      >
         <img src={item.src} alt={caption} />
       </button>
-      {/* <figcaption>{caption}</figcaption> */}
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 }
@@ -99,13 +104,20 @@ function VideoTile({ item, onOpen }) {
   const isFile = VIDEO_EXT.has(fileExtension(item.src));
   return (
     <figure className="media-item media-item--visual">
-      <button type="button" className="media-item__button media-item__button--video" onClick={onOpen} aria-label={"Play " + caption}>
+      <button
+        type="button"
+        className="media-item__button media-item__button--video"
+        onClick={onOpen}
+        aria-label={"Play " + caption}
+      >
         {isFile ? (
           <video src={item.src} preload="metadata" muted playsInline />
         ) : (
           <div className="media-item__video-placeholder" />
         )}
-        <span className="media-item__play" aria-hidden="true">{"\u25B6"}</span>
+        <span className="media-item__play" aria-hidden="true">
+          {"\u25B6"}
+        </span>
       </button>
       <figcaption>{caption}</figcaption>
     </figure>
@@ -121,14 +133,18 @@ function DocumentTile({ item }) {
 
   return (
     <figure className="media-item media-item--doc">
-      <a className="media-item__doc-link" href={item.src} download={download} aria-label={"Download " + caption}>
-        {/* <span>{caption}</span> */}
+      <a
+        className="media-item__doc-link"
+        href={item.src}
+        download={download}
+        aria-label={"Download " + caption}
+      >
         <span className="media-item__doc-icon" style={iconStyle}>
           <span className="media-item__doc-ext">{ext.toUpperCase()}</span>
         </span>
-        <span className="media-item__doc-hint">{caption}</span>
+        <span className="media-item__doc-hint">Click to download</span>
       </a>
-      {/* <figcaption>{caption}</figcaption> */}
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 }
@@ -153,8 +169,21 @@ function Lightbox({ item, onClose }) {
   const stopBubble = (e) => e.stopPropagation();
 
   return (
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={caption} onClick={onClose}>
-      <button type="button" className="lightbox__close" onClick={onClose} aria-label="Close">{"\u00D7"}</button>
+    <div
+      className="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label={caption}
+      onClick={onClose}
+    >
+      <button
+        type="button"
+        className="lightbox__close"
+        onClick={onClose}
+        aria-label="Close"
+      >
+        {"\u00D7"}
+      </button>
       <div className="lightbox__stage" onClick={stopBubble}>
         {item.type === "image" ? (
           <img src={item.src} alt={caption} />
@@ -167,16 +196,38 @@ function Lightbox({ item, onClose }) {
   );
 }
 
-export default function MediaGrid({ items }) {
+export default function MediaGrid({ items, accentVar, label }) {
   const [openItem, setOpenItem] = useState(null);
   const closeLightbox = useCallback(() => setOpenItem(null), []);
 
   if (!items || items.length === 0) {
+    const emptyStyle = accentVar
+      ? { "--empty-accent": "var(" + accentVar + ")" }
+      : undefined;
+    const heading = label ? label + "" : "Coming soon";
     return (
-      <p className="media-grid__empty">
-        Nothing's been added here yet. Add images, documents, or video to this
-        bubble in <code>src/data/ideals.js</code>.
-      </p>
+      <div className="media-grid__empty" style={emptyStyle}>
+        <svg
+          className="media-grid__empty-icon"
+          viewBox="0 0 80 64"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <rect x="6" y="8" width="68" height="48" rx="4" />
+          <circle cx="24" cy="24" r="4" />
+          <path d="M6 44 L 26 28 L 40 40 L 56 24 L 74 40" />
+        </svg>
+        <h3 className="media-grid__empty-title">{heading}</h3>
+        <p className="media-grid__empty-body">
+          We're gathering photos, documents, and video to share here. Please
+          check back soon.
+        </p>
+      </div>
     );
   }
 
@@ -187,10 +238,14 @@ export default function MediaGrid({ items }) {
       <div className="media-grid">
         {normalized.map((item, i) => {
           if (item.type === "image") {
-            return <ImageTile key={i} item={item} onOpen={() => setOpenItem(item)} />;
+            return (
+              <ImageTile key={i} item={item} onOpen={() => setOpenItem(item)} />
+            );
           }
           if (item.type === "video") {
-            return <VideoTile key={i} item={item} onOpen={() => setOpenItem(item)} />;
+            return (
+              <VideoTile key={i} item={item} onOpen={() => setOpenItem(item)} />
+            );
           }
           return <DocumentTile key={i} item={item} />;
         })}

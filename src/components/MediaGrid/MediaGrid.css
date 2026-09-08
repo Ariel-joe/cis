@@ -9,24 +9,24 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--color-parchment-line);
   border-radius: var(--radius-card);
   overflow: hidden;
-  /* background: var(--color-paper); */
+  background: var(--color-paper);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-/* .media-item:hover {
+.media-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px -14px rgba(32, 26, 20, 0.4);
-} */
+}
 
 .media-item figcaption {
   padding: 0.7rem 0.85rem;
   font-size: var(--step--1);
   color: var(--color-ink);
   border-top: 1px solid var(--color-parchment-line);
-  /* background: var(--color-paper); */
+  background: var(--color-paper);
   word-break: break-word;
 }
 
@@ -99,7 +99,7 @@
   gap: 0.6rem;
   text-decoration: none;
   color: var(--color-ink);
-  /* background: linear-gradient(135deg, var(--color-parchment-deep), var(--color-parchment)); */
+  background: linear-gradient(135deg, var(--color-parchment-deep), var(--color-parchment));
 }
 
 .media-item__doc-icon {
@@ -107,7 +107,7 @@
   position: relative;
   width: 68px;
   height: 88px;
-  /* background: var(--color-paper); */
+  background: var(--color-paper);
   border: 1.5px solid var(--doc-tint);
   border-radius: 6px 12px 6px 6px;
   display: flex;
@@ -164,20 +164,41 @@
   color: var(--color-ink-soft);
 }
 
+/* Empty state — shown when a bubble has no media yet. */
 .media-grid__empty {
+  --empty-accent: var(--color-maroon);
   margin-top: 2rem;
-  padding: 1.6rem;
-  border: 1px dashed var(--color-parchment-line);
+  padding: 2.6rem 1.6rem;
+  border: 1.5px dashed var(--empty-accent);
   border-radius: var(--radius-card);
-  color: var(--color-ink-soft);
-  font-size: var(--step--1);
-  max-width: 52ch;
+  background: var(--color-paper);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
 }
 
-.media-grid__empty code {
-  background: var(--color-parchment-deep);
-  padding: 0.05rem 0.35rem;
-  border-radius: 4px;
+.media-grid__empty-icon {
+  width: 72px;
+  height: auto;
+  color: var(--empty-accent);
+  opacity: 0.85;
+}
+
+.media-grid__empty-title {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.media-grid__empty-body {
+  font-size: var(--step-0);
+  color: var(--color-ink-soft);
+  max-width: 44ch;
+  margin: 0;
 }
 
 /* Lightbox — full-screen popup for images and videos. */
