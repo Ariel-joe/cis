@@ -16,10 +16,10 @@
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.media-item:hover {
+/* .media-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px -14px rgba(32, 26, 20, 0.4);
-}
+} */
 
 .media-item figcaption {
   padding: 0.7rem 0.85rem;
@@ -81,7 +81,7 @@
 
 /* Spinner — sits on top of the skeleton for videos so the loading is
    unambiguous even before the poster/metadata comes back. */
-.media-item__spinner {
+/* .media-item__spinner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,7 +94,7 @@
   animation: spinner-rotate 900ms linear infinite;
   z-index: 2;
   pointer-events: none;
-}
+} */
 
 @keyframes skeleton-shimmer {
   0% { background-position: 200% 0; }
