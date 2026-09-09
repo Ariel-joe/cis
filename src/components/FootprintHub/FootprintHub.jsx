@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import background from "../../assets/images/footprint/hero-notoes.png";
+import background from "../../assets/images/footprint/hero-notoes(1).png";
 import toe1 from "../../assets/images/footprint/toe-1.png";
 import toe2 from "../../assets/images/footprint/toe-2.png";
 import toe3 from "../../assets/images/footprint/toe-3.png";
@@ -89,7 +89,7 @@ export default function FootprintHub({ pillar }) {
             aria-label={toe.label}
           >
             <img src={toe.image} alt="" />
-            <span className="footprint-hub__toe-tooltip">{toe.label}</span>
+            {/* <span className="footprint-hub__toe-tooltip">{toe.label}</span> */}
           </Link>
         ))}
       </div>
