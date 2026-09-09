@@ -11,26 +11,31 @@
   text-decoration: none;
 }
 
-.orbit {
-  position: relative;
-  width: 720px;
-  max-width: 100%;
-  height: 720px;
-  margin-inline: auto;
+.pillar-page__header {
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
 }
 
-.orbit__center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.pillar-page__header h1 {
+  font-size: var(--step-3);
+  margin: 0;
+}
+
+.pillar-page__header p {
+  max-width: 60ch;
+  color: var(--color-ink-soft);
+  font-size: var(--step-0);
 }
 
 .pillar-page__siblings {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .pillar-page__sibling {
@@ -54,27 +59,4 @@
   opacity: 1;
   background: var(--accent);
   color: var(--color-paper);
-}
-
-@media (max-width: 720px) {
-  .orbit {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    row-gap: 1.25rem;
-  }
-
-  .orbit__center {
-    position: static;
-    transform: none;
-    grid-column: 1 / -1;
-  }
-
-  .bubble {
-    position: static;
-    transform: none !important;
-    animation: none !important;
-    margin-inline: auto;
-  }
 }

@@ -12,19 +12,28 @@ import heroS from "../assets/images/hero-letters/s.png";
  * To add or edit a bubble on a pillar page: edit its `bubbles` array.
  * To add media to a bubble's own page: fill in that bubble's `media` array.
  *
- * media item shape: { type: "image" | "document" | "video", src, caption }
- *   - image / video: src is a URL or an imported asset
- *   - document: src is a URL to the file (pdf, docx, etc.)
- *
+ * media item shape: { type: "image" | "document" | "video", src, caption?, filename?, poster? }
+ *   - image / video: src is a URL or an imported asset. Images and videos
+ *     open in a lightbox on click.
+ *   - video: optional `poster` is an image shown before the video loads —
+ *     lighter than loading video metadata; recommended for heavy videos.
+ *   - document: src is a URL to the file (pdf, docx, etc.). Documents
+ *     download when clicked; `filename` (optional) overrides the saved
+ *     name for the browser download.
+ *   - caption is always shown at the bottom of the tile — if omitted, the
+ *     filename from `src` is used as a fallback.
+ *   - Media entries can also be plain string paths (e.g. "folder/photo.jpg")
+ *     — type is inferred from the extension and paths without a leading
+ *     slash are treated as public/ assets.
  *
  * A bubble with `placeholder: true` renders with a dashed "add content" look
- * so it's obvious which ones still need real content.
+ * so it's obvious which ones still need real content. Set it to `false`
+ * as soon as real media is added.
  *
- * `image`: path to this letter's artwork used on the ring/orbit medallions
- * (Home page and the pillar page's center circle), served from /public so
- * you can just drop a new file in public/images/letters/ with the same
- * name — no other code needs to change. Leave it as `null` to fall back
- * to the styled-text letter.
+ * `image`: path to this letter's artwork used on the Home page ring
+ * medallions, served from /public so you can just drop a new file in
+ * public/images/letters/ with the same name — no other code needs to
+ * change. Leave it as `null` to fall back to the styled-text letter.
  *
  * `heroImage` / `heroPosition`: the same letter's artwork as it sits on
  * top of the hero banner (see Hero.jsx), positioned to match where it
@@ -63,7 +72,7 @@ export const pillars = [
       {
         slug: "students",
         label: "Students",
-        placeholder: true,
+        placeholder: false,
         media: [
           "Internationalism/Students/306.jpeg",
           "Internationalism/Students/Boarding-International.mp4",
@@ -77,7 +86,7 @@ export const pillars = [
       {
         slug: "staff-rsis",
         label: "Staff RSIS",
-        placeholder: true,
+        placeholder: false,
         media: [
           "Internationalism/Staff-rsis/IMG_0768.jpeg",
           "Internationalism/Staff-rsis/IMG_1503.jpeg",
@@ -86,7 +95,7 @@ export const pillars = [
       {
         slug: "parents",
         label: "Parents",
-        placeholder: true,
+        placeholder: false,
         media: [
           "Internationalism/Parents/kuwait-2.jpg",
           "Internationalism/Parents/kuwait-4.jpg",
@@ -96,7 +105,7 @@ export const pillars = [
       {
         slug: "alumni-matters",
         label: "Alumni Matters",
-        placeholder: true,
+        placeholder: false,
         media: [
           "Internationalism/Alumni-matters/Angela-Njagi.jpg",
           "Internationalism/Alumni-matters/Beverly-Sikueya.jpg",
@@ -271,7 +280,7 @@ export const pillars = [
         ],
       },
       {
-        slug: "Curriculum",
+        slug: "curriculum",
         label: "Curriculum",
         placeholder: false,
         media: [

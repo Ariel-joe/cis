@@ -1,0 +1,106 @@
+.footprint-hub {
+  --accent: var(--color-maroon);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.footprint-hub__frame {
+  position: relative;
+  width: min(540px, 92vw);
+  aspect-ratio: 1500 / 1490;
+}
+
+.footprint-hub__base {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footprint-hub__toe {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.footprint-hub__toe img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.footprint-hub__toe:hover img,
+.footprint-hub__toe:focus-visible img {
+  transform: scale(1.08) translateY(-3px);
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
+}
+
+.footprint-hub__toe:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* Tooltip label above each toe on hover / keyboard focus. */
+.footprint-hub__toe-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 0.25rem 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-paper);
+  background: var(--accent);
+  border-radius: 999px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 3;
+}
+
+.footprint-hub__toe:hover .footprint-hub__toe-tooltip,
+.footprint-hub__toe:focus-visible .footprint-hub__toe-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Legend row below the footprint — always-visible labels so touch
+   users have obvious tap targets, and duplicate route to each toe. */
+.footprint-hub__legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.6rem;
+}
+
+.footprint-hub__legend a {
+  color: var(--color-ink);
+  text-decoration: none;
+  font-size: var(--step--1);
+  font-weight: 500;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-parchment-line);
+  transition: color 150ms ease, background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.footprint-hub__legend a:hover,
+.footprint-hub__legend a:focus-visible {
+  color: var(--color-paper);
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
