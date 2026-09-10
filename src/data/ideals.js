@@ -231,7 +231,17 @@ export const pillars = [
       "Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
     showcaseTitle: "Adventure",
     bubbles: [
-      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      {
+        slug: "alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: [
+          "Adventure/Alumni/adventure.JPG",
+          "Adventure/Alumni/IMG_2312.jpg",
+          "Adventure/Alumni/IMG_3578.jpeg",
+          "Adventure/Alumni/IMG_20231007.jpg",
+        ],
+      },
       { slug: "parents", label: "Parents", placeholder: true, media: [] },
       { slug: "governance", label: "Governance", placeholder: true, media: [] },
       { slug: "students", label: "Students", placeholder: true, media: [] },
@@ -298,7 +308,6 @@ export const pillars = [
           "Service/BSPTA/IMG_0848.jpg",
           "Service/BSPTA/IMG_0860.jpg",
           "Service/BSPTA/IMG_0988.jpg",
-          "Service/BSPTA/JSS-Press-Release-A-Finish.pdf",
           "Service/BSPTA/Image2026.jpeg",
         ],
       },
