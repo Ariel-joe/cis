@@ -124,7 +124,7 @@ function ImageTile({ item, onOpen }) {
           className={loaded ? "is-loaded" : ""}
         />
       </button>
-      {/* <figcaption>{caption}</figcaption> */}
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 }
