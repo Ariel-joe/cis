@@ -280,7 +280,15 @@ export const pillars = [
         "Adventure/Students/22.jpg",
         "Adventure/Students/23.jpg",
       ] },
-      { slug: "staff", label: "Staff", placeholder: true, media: [] },
+      { slug: "staff", label: "Staff", placeholder: true, media: [
+        "Adventure/Staff/11.jpg", 
+        "Adventure/Staff/12.jpg",
+        "Adventure/Staff/13.jpg",
+        "Adventure/Staff/14.jpg",
+        "Adventure/Staff/15.jpg",
+        "Adventure/Staff/16.jpg",
+        "Adventure/Staff/17.jpg",
+      ] },
     ],
   },
   {
