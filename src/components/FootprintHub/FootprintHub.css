@@ -7,11 +7,11 @@
   margin-block: 1.5rem;
 }
 
-/* MANUALLY ADJUST SIZE HERE: change 640px to make the footprint bigger
-   or smaller. 92vw keeps it responsive on narrow screens. */
+/* MANUALLY ADJUST FOOTPRINT SIZE HERE: change 640px to make the whole
+   footprint bigger or smaller. 92vw keeps it responsive on narrow screens. */
 .footprint-hub__frame {
   position: relative;
-  width: min(840px, 92vw);
+  width: min(640px, 92vw);
   aspect-ratio: 1500 / 1490;
 }
 
@@ -50,33 +50,34 @@
   border-radius: 6px;
 }
 
-/* Minimalist always-visible label above each toe. `--label-offset`
-   comes from the TOES array in FootprintHub.jsx and alternates so
-   adjacent labels don't collide. */
-.footprint-hub__toe-label {
+/* Rainbow arc labels — one per toe, laid out along a curve at the top
+   of the circle. `--rotation` is set per label from JS so each sits
+   tangent to the arc. */
+.footprint-hub__arc-label {
+  --rotation: 0deg;
   position: absolute;
-  bottom: calc(100% + var(--label-offset, 6px));
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 0.15rem 0.35rem;
+  color: var(--color-ink);
+  text-decoration: none;
   font-family: var(--font-body);
-  font-size: clamp(0.58rem, 1.1vw, 0.72rem);
+  font-size: clamp(0.72rem, 1.3vw, 0.86rem);
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-ink-soft);
   white-space: nowrap;
-  pointer-events: none;
-  transition: color 180ms ease, font-weight 180ms ease, transform 180ms ease;
+  transform: translate(-50%, -50%) rotate(var(--rotation));
+  transform-origin: center;
+  transition: color 180ms ease, transform 180ms ease;
+  z-index: 2;
 }
 
-.footprint-hub__toe:hover .footprint-hub__toe-label,
-.footprint-hub__toe:focus-visible .footprint-hub__toe-label {
+.footprint-hub__arc-label:hover,
+.footprint-hub__arc-label:focus-visible {
   color: var(--accent);
-  font-weight: 700;
-  transform: translateX(-50%) translateY(-2px);
+  transform: translate(-50%, -50%) rotate(var(--rotation)) scale(1.1);
 }
 
-/* Legend row below the footprint — always-visible labels so touch
-   users have obvious tap targets, and duplicate route to each toe. */
+/* Legend row below the footprint — always-visible chip labels so touch
+   users have obvious tap targets, and a duplicate route to each toe. */
 .footprint-hub__legend {
   list-style: none;
   padding: 0;

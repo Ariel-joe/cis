@@ -160,9 +160,45 @@ export const pillars = [
       "Building a deep personal awareness of environmental sustainability and ecological responsibility.",
     showcaseTitle: "Environmentalism",
     bubbles: [
-      { slug: "bubble-1", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-2", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-3", label: "Add a bubble", placeholder: true, media: [] },
+      {
+        slug: "Parents",
+        label: "Parents",
+        placeholder: true,
+        media: ["Environmentalism/Parents/BSPTA-engagement.jpg"],
+      },
+      {
+        slug: "Staff",
+        label: "Staff",
+        placeholder: true,
+        media: [
+          "Environmentalism/Staff/Environment-activities-through-service-learning.png",
+          "Environmentalism/Staff/Rhino-Charge-and-Hog-Charge-2025.png",
+          "Environmentalism/Staff/Staff-involvment.png",
+        ],
+      },
+      {
+        slug: "Students",
+        label: "Students",
+        placeholder: true,
+        media: [
+          "Environmentalism/Students/BRIQUETTES-MAKING-BY-YEAR-6-LEARNERS-pg1.png",
+          "Environmentalism/Students/BRIQUETTES-MAKING-BY-YEAR-6-LEARNERS-pg2.png",
+          "Environmentalism/Students/Environment-through-Art.png",
+          "Environmentalism/Students/SERVICE-LEARNING-ACTIVITIES-IN-PREP.png",
+        ],
+      },
+      {
+        slug: "Alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: ["Environmentalism/Alumni/DR-Sharon-Mulindi-Alumni.png"],
+      },
+      {
+        slug: "Governance",
+        label: "Governance",
+        placeholder: true,
+        media: [],
+      },
     ],
   },
   {

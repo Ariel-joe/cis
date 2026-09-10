@@ -9,8 +9,7 @@ import "./FootprintHub.css";
 
 /* The 5 clickable toes on the Round Square footprint. Positions come
    from a pixel-precise extraction of the original artwork, expressed as
-   percentages of the canvas so they scale with the frame at any size.
-   Order goes big-toe first, then along the foot from left to right. */
+   percentages of the canvas so they scale with the frame at any size. */
 const TOES = [
   {
     slug: "parents",
@@ -69,6 +68,32 @@ const TOES = [
   },
 ];
 
+/* Rainbow arc tuning. Labels sit along an invisible circle whose centre
+   is the middle of the frame. Adjust these to reshape the arc:
+     ARC_RADIUS_PCT       — how far labels sit from the frame centre.
+                            Larger = closer to the outer circle edge.
+     ARC_SPREAD_DEG       — total width of the arc in degrees.
+                            Larger = labels spread further apart.
+     ARC_ROTATION_FACTOR  — how strongly labels tilt to follow the curve.
+                            0 = all horizontal, 1 = full tangent (steep). */
+const ARC_RADIUS_PCT = 44;
+const ARC_SPREAD_DEG = 70;
+const ARC_ROTATION_FACTOR = 0.6;
+
+function labelPosition(i, total) {
+  const step = ARC_SPREAD_DEG / (total - 1);
+  const angleFromTop = -ARC_SPREAD_DEG / 2 + i * step;
+  const rad = ((angleFromTop - 90) * Math.PI) / 180;
+  const x = 50 + ARC_RADIUS_PCT * Math.cos(rad);
+  const y = 50 + ARC_RADIUS_PCT * Math.sin(rad);
+  const rotation = angleFromTop * ARC_ROTATION_FACTOR;
+  return {
+    left: x + "%",
+    top: y + "%",
+    "--rotation": rotation + "deg",
+  };
+}
+
 export default function FootprintHub({ pillar }) {
   const style = { "--accent": "var(" + pillar.accentVar + ")" };
   return (
@@ -80,19 +105,31 @@ export default function FootprintHub({ pillar }) {
           alt=""
           aria-hidden="true"
         />
+
+        {TOES.map((toe, i) => (
+          <Link
+            key={"label-" + toe.slug}
+            to={"/pillar/" + pillar.slug + "/" + toe.slug}
+            className="footprint-hub__arc-label"
+            style={labelPosition(i, TOES.length)}
+          >
+            {toe.label}
+          </Link>
+        ))}
+
         {TOES.map((toe) => (
           <Link
-            key={toe.slug}
+            key={"toe-" + toe.slug}
             to={"/pillar/" + pillar.slug + "/" + toe.slug}
             className="footprint-hub__toe"
             style={toe.position}
             aria-label={toe.label}
           >
             <img src={toe.image} alt="" />
-            {/* <span className="footprint-hub__toe-tooltip">{toe.label}</span> */}
           </Link>
         ))}
       </div>
+
       <ul className="footprint-hub__legend" aria-label="Community groups">
         {TOES.map((toe) => (
           <li key={toe.slug}>
