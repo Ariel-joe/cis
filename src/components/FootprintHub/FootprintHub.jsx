@@ -65,12 +65,15 @@ const TOES = [
      ARC_RADIUS_PCT       — how far labels sit from the frame centre.
                             Larger = closer to the outer circle edge.
      ARC_SPREAD_DEG       — total width of the arc in degrees.
-                            Larger = labels spread further apart.
+                            Larger = labels spread further apart along
+                            the curve (fixes overlap; too wide and outer
+                            labels start creeping down the sides).
      ARC_ROTATION_FACTOR  — how strongly labels tilt to follow the curve.
-                            0 = all horizontal, 1 = full tangent (steep). */
+                            0 = all horizontal, 1 = full tangent (steep).
+                            0.5 gives a readable curved feel. */
 const ARC_RADIUS_PCT = 44;
-const ARC_SPREAD_DEG = 70;
-const ARC_ROTATION_FACTOR = 0.6;
+const ARC_SPREAD_DEG = 150;
+const ARC_ROTATION_FACTOR = 0.0;
 
 function labelPosition(i, total) {
   if (total <= 1) {
@@ -114,7 +117,7 @@ export default function FootprintHub({ pillar }) {
             className="footprint-hub__arc-label"
             style={labelPosition(i, activeToes.length)}
           >
-            {bubble.label}
+            {bubble.label.toUpperCase()}
           </Link>
         ))}
 
@@ -146,7 +149,7 @@ export default function FootprintHub({ pillar }) {
         })}
       </div>
 
-      <ul className="footprint-hub__legend" aria-label="Community groups">
+      {/* <ul className="footprint-hub__legend" aria-label="Community groups">
         {pillar.bubbles.map((bubble) => (
           <li key={bubble.slug}>
             <Link to={"/pillar/" + pillar.slug + "/" + bubble.slug}>
@@ -154,7 +157,7 @@ export default function FootprintHub({ pillar }) {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

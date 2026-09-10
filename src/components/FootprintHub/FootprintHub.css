@@ -50,14 +50,10 @@
   border-radius: 6px;
 }
 
-/* Toe visual for a slot that doesn't have a bubble in the current
-   pillar. Shown faded and non-interactive so the footprint stays
-   visually whole without pretending to be clickable. */
 .footprint-hub__toe-static {
   position: absolute;
   display: block;
   object-fit: contain;
-  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -67,29 +63,35 @@
 .footprint-hub__arc-label {
   --rotation: 0deg;
   position: absolute;
-  padding: 0.15rem 0.35rem;
+  padding: 0.2rem 0.55rem;
   color: var(--color-ink);
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: clamp(0.72rem, 1.3vw, 0.86rem);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.015em;
   white-space: nowrap;
   transform: translate(-50%, -50%) rotate(var(--rotation));
   transform-origin: center;
-  transition: color 180ms ease, transform 180ms ease;
+  transition: color 180ms ease, text-decoration 180ms ease;
   z-index: 2;
 }
 
 .footprint-hub__arc-label:hover,
 .footprint-hub__arc-label:focus-visible {
   color: var(--accent);
-  transform: translate(-50%, -50%) rotate(var(--rotation)) scale(1.1);
+  text-decoration: underline;
 }
 
-/* Legend row below the footprint — always-visible chip labels so touch
-   users have obvious tap targets, and a duplicate route to each toe.
-   Also shows any bubbles beyond the 5 toe slots (e.g. Service has 7). */
+/* On narrow screens the frame shrinks but labels stay legible, which
+   means they'll overlap again. Hide the arc labels there and lean on
+   the legend row below for tap targets. */
+@media (max-width: 520px) {
+  .footprint-hub__arc-label {
+    display: none;
+  }
+}
+
 .footprint-hub__legend {
   list-style: none;
   padding: 0;

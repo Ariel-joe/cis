@@ -70,6 +70,41 @@ export const pillars = [
     showcaseTitle: "Internationalism",
     bubbles: [
       {
+        slug: "alumni",
+        label: "Alumni",
+        placeholder: false,
+        media: [
+          "Internationalism/Alumni-matters/Angela-Njagi.jpg",
+          "Internationalism/Alumni-matters/Beverly-Sikueya.jpg",
+          "Internationalism/Alumni-matters/Branson-Kyalo.jpg",
+          "Internationalism/Alumni-matters/HERA-ODENY.jpg",
+          "Internationalism/Alumni-matters/Lydia-Kiagi.jpg",
+          "Internationalism/Alumni-matters/NEWTON-MPUGA.jpg",
+          "Internationalism/Alumni-matters/Samantha-Muthui.jpg",
+          "Internationalism/Alumni-matters/Tephila-Chege.jpg",
+        ],
+      },
+      {
+        slug: "parents",
+        label: "Parents",
+        placeholder: false,
+        media: [
+          "Internationalism/Parents/kuwait-2.jpg",
+          "Internationalism/Parents/kuwait-4.jpg",
+          "Internationalism/Parents/kuwait-10.jpg",
+        ],
+      },
+      {
+        slug: "governance",
+        label: "Governance",
+        placeholder: false,
+        media: [
+          "Internationalism/Parents/kuwait-2.jpg",
+          "Internationalism/Parents/kuwait-4.jpg",
+          "Internationalism/Parents/kuwait-10.jpg",
+        ],
+      },
+      {
         slug: "students",
         label: "Students",
         placeholder: false,
@@ -84,37 +119,12 @@ export const pillars = [
         ],
       },
       {
-        slug: "staff-rsis",
-        label: "Staff RSIS",
+        slug: "staff",
+        label: "Staff",
         placeholder: false,
         media: [
           "Internationalism/Staff-rsis/IMG_0768.jpeg",
           "Internationalism/Staff-rsis/IMG_1503.jpeg",
-        ],
-      },
-      {
-        slug: "parents",
-        label: "Parents",
-        placeholder: false,
-        media: [
-          "Internationalism/Parents/kuwait-2.jpg",
-          "Internationalism/Parents/kuwait-4.jpg",
-          "Internationalism/Parents/kuwait-10.jpg",
-        ],
-      },
-      {
-        slug: "alumni-matters",
-        label: "Alumni Matters",
-        placeholder: false,
-        media: [
-          "Internationalism/Alumni-matters/Angela-Njagi.jpg",
-          "Internationalism/Alumni-matters/Beverly-Sikueya.jpg",
-          "Internationalism/Alumni-matters/Branson-Kyalo.jpg",
-          "Internationalism/Alumni-matters/HERA-ODENY.jpg",
-          "Internationalism/Alumni-matters/Lydia-Kiagi.jpg",
-          "Internationalism/Alumni-matters/NEWTON-MPUGA.jpg",
-          "Internationalism/Alumni-matters/Samantha-Muthui.jpg",
-          "Internationalism/Alumni-matters/Tephila-Chege.jpg",
         ],
       },
     ],
@@ -137,9 +147,11 @@ export const pillars = [
       "Encouraging active participation, shared responsibility, and freedom of expression within the school governance and community.",
     showcaseTitle: "Democracy",
     bubbles: [
-      { slug: "bubble-1", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-2", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-3", label: "Add a bubble", placeholder: true, media: [] },
+      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      { slug: "parents", label: "Parents", placeholder: true, media: [] },
+      { slug: "governance", label: "Governance", placeholder: true, media: [] },
+      { slug: "students", label: "Students", placeholder: true, media: [] },
+      { slug: "staff", label: "Staff", placeholder: true, media: [] },
     ],
   },
   {
@@ -161,20 +173,22 @@ export const pillars = [
     showcaseTitle: "Environmentalism",
     bubbles: [
       {
+        slug: "Alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: ["Environmentalism/Alumni/DR-Sharon-Mulindi-Alumni.png"],
+      },
+      {
         slug: "Parents",
         label: "Parents",
         placeholder: true,
         media: ["Environmentalism/Parents/BSPTA-engagement.jpg"],
       },
       {
-        slug: "Staff",
-        label: "Staff",
+        slug: "Governance",
+        label: "Governance",
         placeholder: true,
-        media: [
-          "Environmentalism/Staff/Environment-activities-through-service-learning.png",
-          "Environmentalism/Staff/Rhino-Charge-and-Hog-Charge-2025.png",
-          "Environmentalism/Staff/Staff-involvment.png",
-        ],
+        media: [],
       },
       {
         slug: "Students",
@@ -188,16 +202,14 @@ export const pillars = [
         ],
       },
       {
-        slug: "Alumni",
-        label: "Alumni",
+        slug: "Staff",
+        label: "Staff",
         placeholder: true,
-        media: ["Environmentalism/Alumni/DR-Sharon-Mulindi-Alumni.png"],
-      },
-      {
-        slug: "Governance",
-        label: "Governance",
-        placeholder: true,
-        media: [],
+        media: [
+          "Environmentalism/Staff/Environment-activities-through-service-learning.png",
+          "Environmentalism/Staff/Rhino-Charge-and-Hog-Charge-2025.png",
+          "Environmentalism/Staff/Staff-involvment.png",
+        ],
       },
     ],
   },
@@ -219,9 +231,11 @@ export const pillars = [
       "Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
     showcaseTitle: "Adventure",
     bubbles: [
-      { slug: "bubble-1", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-2", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-3", label: "Add a bubble", placeholder: true, media: [] },
+      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      { slug: "parents", label: "Parents", placeholder: true, media: [] },
+      { slug: "governance", label: "Governance", placeholder: true, media: [] },
+      { slug: "students", label: "Students", placeholder: true, media: [] },
+      { slug: "staff", label: "Staff", placeholder: true, media: [] },
     ],
   },
   {
@@ -242,9 +256,11 @@ export const pillars = [
       "Cultivating self-discipline, initiative, and collaborative skills to guide and serve others effectively.",
     showcaseTitle: "Leadership",
     bubbles: [
-      { slug: "bubble-1", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-2", label: "Add a bubble", placeholder: true, media: [] },
-      { slug: "bubble-3", label: "Add a bubble", placeholder: true, media: [] },
+      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      { slug: "parents", label: "Parents", placeholder: true, media: [] },
+      { slug: "governance", label: "Governance", placeholder: true, media: [] },
+      { slug: "students", label: "Students", placeholder: true, media: [] },
+      { slug: "staff", label: "Staff", placeholder: true, media: [] },
     ],
   },
   {
@@ -275,8 +291,8 @@ export const pillars = [
         ],
       },
       {
-        slug: "bptsa",
-        label: "BPTSA",
+        slug: "parents",
+        label: "Parents",
         placeholder: false,
         media: [
           "Service/BSPTA/IMG_0848.jpg",
@@ -287,24 +303,24 @@ export const pillars = [
         ],
       },
       {
-        slug: "cmt-and-board",
-        label: "CMT and Board",
+        slug: "governance",
+        label: "Governance",
         placeholder: false,
         media: [
           "Service/CMT-and-Board/4Q7A6670.jpg",
           "Service/CMT-and-Board/4Q7A6671.jpg",
         ],
       },
-      {
-        slug: "minutes",
-        label: "Minutes",
-        placeholder: false,
-        media: ["Service/Minutes/MEETING-MINUTES-SERVICE-COMMITEE.docx"],
-      },
+      // {
+      //   slug: "minutes",
+      //   label: "Minutes",
+      //   placeholder: false,
+      //   media: [],
+      // },
       { slug: "students", label: "Students", placeholder: false, media: [] },
       {
-        slug: "educators-and-staff",
-        label: "Educators and Staff",
+        slug: "staff",
+        label: "Staff",
         placeholder: false,
         media: [
           "Service/Educators-and-staff/4Q7A4071.jpg",
@@ -313,18 +329,18 @@ export const pillars = [
           "Service/Educators-and-staff/4Q7A6939.jpg",
           "Service/Educators-and-staff/11.jpg",
           "Service/Educators-and-staff/12.jpg",
-        ],
-      },
-      {
-        slug: "curriculum",
-        label: "Curriculum",
-        placeholder: false,
-        media: [
+          "Service/Minutes/MEETING-MINUTES-SERVICE-COMMITEE.docx",
           "Service/Curriculum/Year-9-Citizenship-Schemes-of-Work.docx",
           "Service/Curriculum/SOW-Preamble-Year-9-Citizenship.docx",
           "Service/Curriculum/Citizenship-Overview-9.docx",
         ],
       },
+      // {
+      //   slug: "curriculum",
+      //   label: "Curriculum",
+      //   placeholder: false,
+      //   media: [],
+      // },
     ],
   },
 ];
