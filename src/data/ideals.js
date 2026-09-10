@@ -182,7 +182,7 @@ export const pillars = [
         slug: "Parents",
         label: "Parents",
         placeholder: true,
-        media: ["Environmentalism/Parents/BSPTA-engagement.jpg"],
+        media: ["Environmentalism/Parents/BSPTA-engagement.png"],
       },
       {
         slug: "Governance",
