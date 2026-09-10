@@ -1,6 +1,7 @@
 .media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(350px, auto); /* Sets a minimum height of 350px per row */
   gap: 1.25rem;
   margin-top: 2rem;
 }
@@ -14,6 +15,7 @@
   overflow: hidden;
   background: var(--color-paper);
   transition: transform 180ms ease, box-shadow 180ms ease;
+  height: 100%; /* Ensures flex container stretches */
 }
 
 /* .media-item:hover {
@@ -40,7 +42,8 @@
   background: transparent;
   cursor: pointer;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  flex: 1; /* Fills remaining card height */
+  min-height: 0; /* Prevents overflow inside flex containers */
   overflow: hidden;
 }
 

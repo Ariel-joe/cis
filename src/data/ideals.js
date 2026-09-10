@@ -242,7 +242,17 @@ export const pillars = [
           "Adventure/Alumni/IMG_20231007.jpg",
         ],
       },
-      { slug: "parents", label: "Parents", placeholder: true, media: [] },
+      {
+        slug: "parents",
+        label: "Parents",
+        placeholder: true,
+        media: [
+          "Adventure/Parents/adventure.JPG",
+          "Adventure/Parents/IMG_2312.jpg",
+          "Adventure/Parents/IMG_3578.jpeg",
+          "Adventure/Parents/IMG_20231007.jpg",
+        ],
+      },
       { slug: "governance", label: "Governance", placeholder: true, media: [] },
       { slug: "students", label: "Students", placeholder: true, media: [] },
       { slug: "staff", label: "Staff", placeholder: true, media: [] },
