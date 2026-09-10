@@ -50,9 +50,20 @@
   border-radius: 6px;
 }
 
-/* Rainbow arc labels — one per toe, laid out along a curve at the top
-   of the circle. `--rotation` is set per label from JS so each sits
-   tangent to the arc. */
+/* Toe visual for a slot that doesn't have a bubble in the current
+   pillar. Shown faded and non-interactive so the footprint stays
+   visually whole without pretending to be clickable. */
+.footprint-hub__toe-static {
+  position: absolute;
+  display: block;
+  object-fit: contain;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Rainbow arc labels — one per active toe, laid out along a curve at
+   the top of the circle. `--rotation` is set per label from JS so each
+   sits tangent to the arc. */
 .footprint-hub__arc-label {
   --rotation: 0deg;
   position: absolute;
@@ -77,7 +88,8 @@
 }
 
 /* Legend row below the footprint — always-visible chip labels so touch
-   users have obvious tap targets, and a duplicate route to each toe. */
+   users have obvious tap targets, and a duplicate route to each toe.
+   Also shows any bubbles beyond the 5 toe slots (e.g. Service has 7). */
 .footprint-hub__legend {
   list-style: none;
   padding: 0;

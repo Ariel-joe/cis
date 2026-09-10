@@ -7,13 +7,13 @@ import toe4 from "../../assets/images/footprint/toe-4.png";
 import toe5 from "../../assets/images/footprint/toe-5.png";
 import "./FootprintHub.css";
 
-/* The 5 clickable toes on the Round Square footprint. Positions come
-   from a pixel-precise extraction of the original artwork, expressed as
-   percentages of the canvas so they scale with the frame at any size. */
+/* Visual positions of the 5 toes on the footprint background. Percentages
+   of the canvas so they scale with the frame at any size. Order goes
+   big-toe first, then along the foot from left to right. Slug and label
+   come from the pillar's own bubbles array — this file just supplies the
+   toe artwork and where to place it. */
 const TOES = [
   {
-    slug: "parents",
-    label: "Parents",
     image: toe1,
     position: {
       left: "28.60%",
@@ -23,8 +23,6 @@ const TOES = [
     },
   },
   {
-    slug: "staff",
-    label: "Staff",
     image: toe2,
     position: {
       left: "42.67%",
@@ -34,8 +32,6 @@ const TOES = [
     },
   },
   {
-    slug: "students",
-    label: "Students",
     image: toe3,
     position: {
       left: "49.93%",
@@ -45,8 +41,6 @@ const TOES = [
     },
   },
   {
-    slug: "alumni",
-    label: "Alumni",
     image: toe4,
     position: {
       left: "55.27%",
@@ -56,8 +50,6 @@ const TOES = [
     },
   },
   {
-    slug: "governance",
-    label: "Governance",
     image: toe5,
     position: {
       left: "60.07%",
@@ -81,6 +73,13 @@ const ARC_SPREAD_DEG = 70;
 const ARC_ROTATION_FACTOR = 0.6;
 
 function labelPosition(i, total) {
+  if (total <= 1) {
+    return {
+      left: "50%",
+      top: 50 - ARC_RADIUS_PCT + "%",
+      "--rotation": "0deg",
+    };
+  }
   const step = ARC_SPREAD_DEG / (total - 1);
   const angleFromTop = -ARC_SPREAD_DEG / 2 + i * step;
   const rad = ((angleFromTop - 90) * Math.PI) / 180;
@@ -96,6 +95,8 @@ function labelPosition(i, total) {
 
 export default function FootprintHub({ pillar }) {
   const style = { "--accent": "var(" + pillar.accentVar + ")" };
+  const activeToes = pillar.bubbles.slice(0, TOES.length);
+
   return (
     <div className="footprint-hub" style={style}>
       <div className="footprint-hub__frame">
@@ -106,35 +107,50 @@ export default function FootprintHub({ pillar }) {
           aria-hidden="true"
         />
 
-        {TOES.map((toe, i) => (
+        {activeToes.map((bubble, i) => (
           <Link
-            key={"label-" + toe.slug}
-            to={"/pillar/" + pillar.slug + "/" + toe.slug}
+            key={"label-" + bubble.slug}
+            to={"/pillar/" + pillar.slug + "/" + bubble.slug}
             className="footprint-hub__arc-label"
-            style={labelPosition(i, TOES.length)}
+            style={labelPosition(i, activeToes.length)}
           >
-            {toe.label}
+            {bubble.label}
           </Link>
         ))}
 
-        {TOES.map((toe) => (
-          <Link
-            key={"toe-" + toe.slug}
-            to={"/pillar/" + pillar.slug + "/" + toe.slug}
-            className="footprint-hub__toe"
-            style={toe.position}
-            aria-label={toe.label}
-          >
-            <img src={toe.image} alt="" />
-          </Link>
-        ))}
+        {TOES.map((toeVisual, i) => {
+          const bubble = activeToes[i];
+          if (!bubble) {
+            return (
+              <img
+                key={"toe-static-" + i}
+                className="footprint-hub__toe-static"
+                src={toeVisual.image}
+                style={toeVisual.position}
+                alt=""
+                aria-hidden="true"
+              />
+            );
+          }
+          return (
+            <Link
+              key={"toe-" + bubble.slug}
+              to={"/pillar/" + pillar.slug + "/" + bubble.slug}
+              className="footprint-hub__toe"
+              style={toeVisual.position}
+              aria-label={bubble.label}
+            >
+              <img src={toeVisual.image} alt="" />
+            </Link>
+          );
+        })}
       </div>
 
       <ul className="footprint-hub__legend" aria-label="Community groups">
-        {TOES.map((toe) => (
-          <li key={toe.slug}>
-            <Link to={"/pillar/" + pillar.slug + "/" + toe.slug}>
-              {toe.label}
+        {pillar.bubbles.map((bubble) => (
+          <li key={bubble.slug}>
+            <Link to={"/pillar/" + pillar.slug + "/" + bubble.slug}>
+              {bubble.label}
             </Link>
           </li>
         ))}
