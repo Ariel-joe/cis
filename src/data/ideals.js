@@ -90,7 +90,7 @@ export const pillars = [
         slug: "parents",
         label: "Parents",
         placeholder: false,
-        media: ["Internationalism/Parents/parent.png"],
+        media: ["Internationalism/Parents/parent.png", "Internationalism/Parents/RSIC-Parents-Feedback.mp4"],
       },
       {
         slug: "governance",
