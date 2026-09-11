@@ -90,19 +90,13 @@ export const pillars = [
         slug: "parents",
         label: "Parents",
         placeholder: false,
-        media: [
-          "Internationalism/Parents/parent.png",
-        ],
+        media: ["Internationalism/Parents/parent.png"],
       },
       {
         slug: "governance",
         label: "Governance",
         placeholder: false,
-        media: [
-          "Internationalism/Parents/kuwait-2.jpg",
-          "Internationalism/Parents/kuwait-4.jpg",
-          "Internationalism/Parents/kuwait-10.jpg",
-        ],
+        media: [],
       },
       {
         slug: "students",
@@ -115,7 +109,7 @@ export const pillars = [
           "Internationalism/Students/Exchange,-GISS,-RSIC,-Virtual-exchange-Bulletin-4-Term-2-2025-2026.docx",
           "Internationalism/Students/Exchanges-Bulletin-2-Term-3-2025-2026.docx",
           "Internationalism/Students/IMG_0647.jpeg",
-          "Internationalism/Students/RS-Conference-in-SA-March-2026.pptx", 
+          "Internationalism/Students/RS-Conference-in-SA-March-2026.pptx",
         ],
       },
       {
