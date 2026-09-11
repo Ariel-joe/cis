@@ -74,6 +74,8 @@ export const pillars = [
         label: "Alumni",
         placeholder: false,
         media: [
+          "Internationalism/Alumni-matters/University-Locations-2026.png",
+          "Internationalism/Alumni-matters/University-Locations-2025.png",
           "Internationalism/Alumni-matters/Angela-Njagi.jpg",
           "Internationalism/Alumni-matters/Beverly-Sikueya.jpg",
           "Internationalism/Alumni-matters/Branson-Kyalo.jpg",
@@ -89,9 +91,7 @@ export const pillars = [
         label: "Parents",
         placeholder: false,
         media: [
-          "Internationalism/Parents/kuwait-2.jpg",
-          "Internationalism/Parents/kuwait-4.jpg",
-          "Internationalism/Parents/kuwait-10.jpg",
+          "Internationalism/Parents/parent.png",
         ],
       },
       {
@@ -115,7 +115,7 @@ export const pillars = [
           "Internationalism/Students/Exchange,-GISS,-RSIC,-Virtual-exchange-Bulletin-4-Term-2-2025-2026.docx",
           "Internationalism/Students/Exchanges-Bulletin-2-Term-3-2025-2026.docx",
           "Internationalism/Students/IMG_0647.jpeg",
-          "Internationalism/Students/RS-Conference-in-SA-March-2026.pptx",
+          "Internationalism/Students/RS-Conference-in-SA-March-2026.pptx", 
         ],
       },
       {
