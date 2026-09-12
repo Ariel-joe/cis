@@ -157,10 +157,47 @@ export const pillars = [
           "Democracy/Alumni/David-Mulandi-Leaving-a-Legacy-Talk.mp4",
         ],
       },
-      { slug: "parents", label: "Parents", placeholder: true, media: [] },
-      { slug: "governance", label: "Governance", placeholder: true, media: [] },
-      { slug: "students", label: "Students", placeholder: true, media: [] },
-      { slug: "staff", label: "Staff", placeholder: true, media: [] },
+      {
+        slug: "parents",
+        label: "Parents",
+        placeholder: true,
+        media: [
+          "Democracy/Parents/BSPTA-AGM-Agenda-October-2025.png",
+          "Democracy/Parents/BSPTA-AGM-Letter-October-2025.png",
+          "Democracy/Parents/BSPTA-whatsapp-forum.png",
+        ],
+      },
+      {
+        slug: "governance",
+        label: "Governance",
+        placeholder: true,
+        media: [
+          "Democracy/Governance/Briefing-Notes-8th-September-2026.png",
+          "Democracy/Governance/management-structure-2026-sept-karen-devolved-communication.png",
+          "Democracy/Governance/management-structure-2026-sept-runda-devolved-communication.png",
+          "Democracy/Governance/Rika-meeting-minutes-8-5-2026-Students-voice.png",
+        ],
+      },
+      {
+        slug: "students",
+        label: "Students",
+        placeholder: true,
+        media: [
+          "Democracy/Students/ECAMUN-43rd-photo-1-Learners-voices.jpg",
+          "Democracy/Students/Prefect-Application-Learner_s-voice.png",
+          "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
+        ],
+      },
+      {
+        slug: "staff",
+        label: "Staff",
+        placeholder: true,
+        media: [
+          "Democracy/Staff/Minutes-of-Whole-School-Staff-Meeting-No.1-2026-pg1.png",
+          "Democracy/Staff/Minutes-of-Whole-School-Staff-Meeting-No.1-2026-pg2.png",
+          "Democracy/Staff/Staff-management-structure-2026-sept-admin.png"
+        ],
+      },
     ],
   },
   {
