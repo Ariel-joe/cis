@@ -100,7 +100,7 @@ export const pillars = [
         slug: "governance",
         label: "Governance",
         placeholder: false,
-        media: [],
+        // media: [],
       },
       {
         slug: "students",

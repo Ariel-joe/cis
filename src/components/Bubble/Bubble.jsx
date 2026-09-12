@@ -1,14 +1,37 @@
-import { Link } from "react-router-dom";
-import "./Bubble.css";
+import { Link, Navigate, useParams } from "react-router-dom";
+import MediaGrid from "../../components/MediaGrid/MediaGrid";
+import InspiredFeature from "../../components/InspiredFeature/InspiredFeature";
+import { getBubble } from "../../data/ideals";
+import "./BubblePage.css";
 
-export default function Bubble({ to, label, placeholder, accentVar, style, index }) {
+export default function BubblePage() {
+  const { pillarSlug, bubbleSlug } = useParams();
+  const { pillar, bubble } = getBubble(pillarSlug, bubbleSlug);
+
+  if (!pillar || !bubble) return <Navigate to="/" replace />;
+
+  const showInspiredFeature =
+    pillarSlug === "internationalism" && bubbleSlug === "governance";
+
   return (
-    <Link
-      to={to}
-      className={`bubble${placeholder ? " bubble--placeholder" : ""}`}
-      style={{ "--accent": `var(${accentVar})`, ...style, "--delay": `${index * 70}ms` }}
-    >
-      <span className="bubble__label">{label}</span>
-    </Link>
+    <section className="container bubble-page">
+      <nav className="bubble-page__crumb eyebrow-note">
+        <Link to="/">IDEALS</Link> /{" "}
+        <Link to={`/pillar/${pillar.slug}`}>{pillar.title}</Link> /{" "}
+        {bubble.label}
+      </nav>
+
+      <h1 style={{ color: `var(${pillar.accentVar})` }}>{bubble.label}</h1>
+
+      {showInspiredFeature ? (
+        <InspiredFeature />
+      ) : (
+        <MediaGrid
+          items={bubble.media}
+          accentVar={pillar.accentVar}
+          label={bubble.label}
+        />
+      )}
+    </section>
   );
 }
