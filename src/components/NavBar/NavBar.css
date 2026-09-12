@@ -1,36 +1,75 @@
 .navbar {
-  padding-block: 1.0rem;
+  padding-block: 1rem;
   border-bottom: 1px solid var(--color-parchment-line);
 }
 
 .navbar__row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.navbar__mark {
-  font-family: var(--font-display);
-  font-size: var(--step-1);
-  font-weight: 600;
+/* Left cluster holds Round Square + Brookhouse side by side. */
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.navbar__logo-link {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--color-ink);
-  letter-spacing: 0.01em;
+  color: inherit;
+  transition: opacity 150ms ease;
 }
 
-.navbar__mark span {
-  color: var(--color-maroon);
+.navbar__logo-link:hover,
+.navbar__logo-link:focus-visible {
+  opacity: 0.75;
 }
 
-.navbar__tag {
-  font-size: var(--step--1);
-  color: var(--color-ink-soft);
+/* All logos sized by height so they baseline together regardless of
+   each source image's aspect ratio. Tune per-logo below. */
+.navbar__image {
+  display: block;
+  width: auto;
+  object-fit: contain;
 }
 
-@media (max-width: 560px) {
-  .navbar__tag {
-    display: none;
+/* --- Per-logo heights ---
+   Adjust these individually if one logo looks too big or small
+   relative to the others. */
+.navbar__image--roundsquare {
+  height: 44px;
+}
+
+.navbar__image--brookhouse {
+  height: 44px;
+}
+
+.navbar__image--inspired {
+  height: 40px;
+}
+
+@media (max-width: 640px) {
+  .navbar__row {
+    gap: 1rem;
+  }
+
+  .navbar__left {
+    gap: 0.75rem;
+  }
+
+  .navbar__image--roundsquare,
+  .navbar__image--brookhouse {
+    height: 36px;
+  }
+
+  .navbar__image--inspired {
+    height: 32px;
   }
 }
