@@ -6,12 +6,16 @@ import "./BubblePage.css";
 
 export default function BubblePage() {
   const { pillarSlug, bubbleSlug } = useParams();
-  const { pillar, bubble } = getBubble(pillarSlug, bubbleSlug);
+
+  const pSlug = pillarSlug?.trim().toLowerCase();
+  const bSlug = bubbleSlug?.trim().toLowerCase();
+
+  const { pillar, bubble } = getBubble(pSlug, bSlug);
 
   if (!pillar || !bubble) return <Navigate to="/" replace />;
 
   const showInspiredFeature =
-    pillarSlug === "internationalism" && bubbleSlug === "governance";
+    pSlug === "internationalism" && bSlug === "governance";
 
   return (
     <section className="container bubble-page">

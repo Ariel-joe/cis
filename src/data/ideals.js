@@ -100,7 +100,7 @@ export const pillars = [
         slug: "governance",
         label: "Governance",
         placeholder: false,
-        // media: [],
+        media: [],
       },
       {
         slug: "students",
@@ -500,11 +500,20 @@ export const pillars = [
 ];
 
 export function getPillar(slug) {
-  return pillars.find((p) => p.slug === slug);
+  if (!slug) return undefined;
+  return pillars.find(
+    (p) => p.slug.trim().toLowerCase() === slug.trim().toLowerCase(),
+  );
 }
 
 export function getBubble(pillarSlug, bubbleSlug) {
   const pillar = getPillar(pillarSlug);
-  if (!pillar) return { pillar: undefined, bubble: undefined };
-  return { pillar, bubble: pillar.bubbles.find((b) => b.slug === bubbleSlug) };
+  if (!pillar || !bubbleSlug) return { pillar: undefined, bubble: undefined };
+
+  const cleanBubbleSlug = bubbleSlug.trim().toLowerCase();
+  const bubble = pillar.bubbles.find(
+    (b) => b.slug.trim().toLowerCase() === cleanBubbleSlug,
+  );
+
+  return { pillar, bubble };
 }
