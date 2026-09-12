@@ -439,6 +439,7 @@ export const pillars = [
         media: [
           "Service/Alumni/Kenyan-Entrepreneur-Turns-Plastic-Bottles-Into-Eco-Bricks.mp4",
           "Service/Alumni/Women-and-Power_ Meet-the-woman-up-cycling-plastic-into-eco-bricks.mp4",
+          "Service/Alumni/Dr-Sharon-Mulindi-Emergency-Wildlife-Care-Vet-Unit-in-Action!-SAVE-THE-ELEPHANTS.mp4",
         ],
       },
       {
