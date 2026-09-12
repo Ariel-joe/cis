@@ -74,6 +74,7 @@ export const pillars = [
         label: "Alumni",
         placeholder: false,
         media: [
+          "Internationalism/Alumni-matters/Annual-Brookhouse-Alumni-Gatherings.jpg",
           "Internationalism/Alumni-matters/University-Locations-2026.png",
           "Internationalism/Alumni-matters/University-Locations-2025.png",
           "Internationalism/Alumni-matters/Angela-Njagi.jpg",
@@ -90,7 +91,10 @@ export const pillars = [
         slug: "parents",
         label: "Parents",
         placeholder: false,
-        media: ["Internationalism/Parents/Celebrating-Internationalism.png", "Internationalism/Parents/RSIC-Parents-Feedback.mp4"],
+        media: [
+          "Internationalism/Parents/Celebrating-Internationalism.png",
+          "Internationalism/Parents/RSIC-Parents-Feedback.mp4",
+        ],
       },
       {
         slug: "governance",
@@ -142,7 +146,16 @@ export const pillars = [
       "Encouraging active participation, shared responsibility, and freedom of expression within the school governance and community.",
     showcaseTitle: "Democracy",
     bubbles: [
-      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      {
+        slug: "alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: [
+          "Democracy/Alumni/Alumni-gathering-Democracy.jpg",
+          "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-1.jpg",
+          "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-2.jpg",
+        ],
+      },
       { slug: "parents", label: "Parents", placeholder: true, media: [] },
       { slug: "governance", label: "Governance", placeholder: true, media: [] },
       { slug: "students", label: "Students", placeholder: true, media: [] },
