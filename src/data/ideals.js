@@ -195,7 +195,7 @@ export const pillars = [
         media: [
           "Democracy/Staff/Minutes-of-Whole-School-Staff-Meeting-No.1-2026-pg1.png",
           "Democracy/Staff/Minutes-of-Whole-School-Staff-Meeting-No.1-2026-pg2.png",
-          "Democracy/Staff/Staff-management-structure-2026-sept-admin.png"
+          "Democracy/Staff/Staff-management-structure-2026-sept-admin.png",
         ],
       },
     ],
@@ -360,11 +360,58 @@ export const pillars = [
       "Cultivating self-discipline, initiative, and collaborative skills to guide and serve others effectively.",
     showcaseTitle: "Leadership",
     bubbles: [
-      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
-      { slug: "parents", label: "Parents", placeholder: true, media: [] },
-      { slug: "governance", label: "Governance", placeholder: true, media: [] },
-      { slug: "students", label: "Students", placeholder: true, media: [] },
-      { slug: "staff", label: "Staff", placeholder: true, media: [] },
+      {
+        slug: "alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: ["Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png"],
+      },
+      {
+        slug: "parents",
+        label: "Parents",
+        placeholder: true,
+        media: [
+          "Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg1.png",
+          "Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg2.png",
+        ],
+      },
+      {
+        slug: "governance",
+        label: "Governance",
+        placeholder: true,
+        media: [
+          "Leadership/Governance/Responsibility-Map.png",
+          "Leadership/Governance/Policy-Groups-1_10.png",
+          "Leadership/Governance/Board-policies-2.1-2.6-The-Board-pg1.png",
+          "Leadership/Governance/Board-policies-2.1-2.6-The-Board-pg2.png",
+          "Leadership/Governance/Board-policies-2.1-2.6-The-Board-pg3.png",
+          "Leadership/Governance/Board-policies-2.1-2.6-The-Board-pg4.png",
+        ],
+      },
+      {
+        slug: "students",
+        label: "Students",
+        placeholder: true,
+        media: [
+          "Leadership/Students/Amboseli-House.JPG",
+          "Leadership/Students/Mara-House.jpg",
+          "Leadership/Students/Samburu-House.jpg",
+          "Leadership/Students/Tsavo-House.JPG",
+          "Leadership/Students/IMG_1858.JPG",
+          "Leadership/Students/Student-Leaders.JPG",
+          "Leadership/Students/Student-leaders.JPG",
+          "Leadership/Students/RIKA-Reps-Term-1-2025.jpg",
+        ],
+      },
+      {
+        slug: "staff",
+        label: "Staff",
+        placeholder: true,
+        media: [
+          "Leadership/Staff/Brookhouse-CIS-Leadership-pg1.png",
+          "Leadership/Staff/Brookhouse-CIS-Leadership-pg2.png",
+        ],
+      },
     ],
   },
   {
