@@ -43,7 +43,7 @@
   pointer-events: none;
 
   /* --- VERTICAL POSITION --- */
-  top: 3%;
+  top: 8%;
 
   /* --- HORIZONTAL CENTERING --- */
   left: 0;
@@ -140,5 +140,38 @@
 @media (max-width: 640px) {
   .hero-philosophy--mobile {
     display: flex;
+  }
+}
+
+/* ------------FONT INCREASE ON RESPONSIVE DESIGN ------------ */
+/* Base desktop styles (large screens) */
+.hero-philosophy--overlay .hero-philosophy__text {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-philosophy--overlay .hero-philosophy__cta {
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+/* Laptops and smaller screens (1200px and below) */
+@media (max-width: 1200px) {
+  .hero-philosophy--overlay .hero-philosophy__text {
+    font-size: 1rem;       /* Bump up for better readability on laptops */
+    line-height: 1.55;
+  }
+  
+  .hero-philosophy--overlay .hero-philosophy__cta {
+    font-size: 0.88rem;
+  }
+}
+
+/* Tablet / small screens before mobile cutoff (900px and below) */
+@media (max-width: 900px) {
+  .hero-philosophy--overlay .hero-philosophy__text {
+    font-size: 0.95rem;
   }
 }
