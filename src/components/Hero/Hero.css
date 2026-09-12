@@ -7,23 +7,34 @@
   justify-content: center;
 }
 
+/* --- KNOB 1: HERO SIZE ---
+   Change 1080px to scale the whole hero. Bigger = 1200px, smaller = 960px. */
 .hero__frame {
   position: relative;
-  width: min(900px, 100%);
-  aspect-ratio: 1464 / 1075;
+  width: min(1080px, 100%);
+  aspect-ratio: 1463 / 1075;
 }
 
+/* --- KNOB 2: TREE OPACITY ---
+   0.28 is a good default. Higher = tree more visible / harder to read text.
+   Lower = text pops more / tree fades. Try 0.22–0.4 range. */
 .hero__background {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  opacity: 0.28;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero__letter {
   position: absolute;
   display: block;
   cursor: pointer;
+  z-index: 1;
 }
 
 .hero__letter img {
@@ -56,8 +67,9 @@
   font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: clamp(0.90rem, 2.0vw, 1.0rem);
+  font-size: clamp(0.55rem, 1.6vw, 0.85rem);
   color: var(--color-ink);
+  z-index: 1;
   transition: color 150ms ease;
 }
 

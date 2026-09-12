@@ -1,0 +1,114 @@
+/* =========================================================
+   HERO PHILOSOPHY
+   Shared base + two positioning variants (overlay / mobile).
+   All the knobs you'll reach for live in this file.
+   ========================================================= */
+
+.hero-philosophy {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-philosophy__text {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.hero-philosophy__cta {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
+/* =========================================================
+   OVERLAY VARIANT — sits absolutely inside .hero__frame,
+   layered on top of the tree image. Desktop only.
+   ========================================================= */
+
+.hero-philosophy--overlay {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+
+  /* --- KNOB A: TOP ---
+     Vertical distance from the top of the hero frame.
+     Try 1–8%. Lower = higher up, higher = lower down. */
+  top: 3%;
+
+  /* --- KNOB B: HORIZONTAL POSITION ---
+     Horizontal center of the text. 50% = frame center;
+     the tree leans slightly, so 52–55% often reads as centered. */
+  left: 52%;
+  transform: translateX(-50%);
+
+  /* --- KNOB C: WIDTH ---
+     How wide the text column is as a % of the hero frame.
+     IMPORTANT: this is capped by KNOB D below. If you set width
+     higher than max-width can produce, nothing visible changes. */
+  width: 90%;
+
+  /* --- KNOB D: MAX WIDTH (the ceiling) ---
+     Absolute cap in pixels. If your `width` setting works out to more
+     than this, the ceiling wins and the element stops growing.
+     To let KNOB C matter at large sizes, keep KNOB D generous. */
+  max-width: 1000px;
+
+  /* --- KNOB E: GAP BETWEEN PARAGRAPH AND CTA --- */
+  gap: 0.6rem;
+}
+
+/* --- KNOB F: MAIN PARAGRAPH FONT SIZE (overlay) ---
+   clamp(min, preferred-at-typical-widths, max).
+   Bump middle (1.35vw) to 1.6vw to enlarge. */
+.hero-philosophy--overlay .hero-philosophy__text {
+  font-size: clamp(0.75rem, 1.35vw, 1.02rem);
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+/* --- KNOB G: CTA FONT SIZE (overlay) ---
+   Slightly smaller than the paragraph. */
+.hero-philosophy--overlay .hero-philosophy__cta {
+  font-size: clamp(0.65rem, 1.15vw, 0.9rem);
+}
+
+/* --- KNOB H: HIDE-ON-MOBILE BREAKPOINT ---
+   Below this width the overlay disappears and the mobile variant
+   below shows in its place. */
+@media (max-width: 640px) {
+  .hero-philosophy--overlay {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MOBILE VARIANT — plain block section shown below the hero on
+   narrow screens. Hidden by default; enabled below the same
+   breakpoint used to hide the overlay above.
+   ========================================================= */
+
+.hero-philosophy--mobile {
+  display: none;
+  max-width: 62ch;
+  margin-inline: auto;
+  padding-block: 1.5rem 0.5rem;
+  gap: 1.25rem;
+}
+
+.hero-philosophy--mobile .hero-philosophy__text {
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+
+.hero-philosophy--mobile .hero-philosophy__cta {
+  font-size: var(--step--1);
+}
+
+@media (max-width: 640px) {
+  .hero-philosophy--mobile {
+    display: flex;
+  }
+}

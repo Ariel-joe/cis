@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
+import HeroPhilosophy from "../../components/HeroPhilosophy/HeroPhilosophy";
 import LetterCircle from "../../components/LetterCircle/LetterCircle";
 import { pillars } from "../../data/ideals";
 import "./Home.css";
@@ -9,16 +10,22 @@ const RADIUS = 250;
 export default function Home() {
   return (
     <>
-            {/* <section className="container intro">
+      {/* <section className="container intro">
         <p>
           The IDEALS at Brookhouse Schools are the six core pillars of the
           Round Square international network philosophy, focusing on
           character development and servant leadership.
         </p>
       </section> */}
+
       <Hero />
 
-
+      {/* Mobile fallback — the overlay inside the hero hides itself below
+          640px viewport width. This variant shows in its place so mobile
+          visitors still see the philosophy text. */}
+      <div className="container">
+        <HeroPhilosophy variant="mobile" />
+      </div>
 
       {/* <section className="container ring-section" aria-label="The six IDEALS pillars">
         <div className="ring">

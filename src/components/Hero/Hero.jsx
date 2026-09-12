@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import heroBackground from "../../assets/images/Hero_NoIDEALS.png";
+import heroBackground from "../../assets/images/hero-guiding-principles.png";
+import HeroPhilosophy from "../HeroPhilosophy/HeroPhilosophy";
 import { pillars, heroCaptionTop } from "../../data/ideals";
 import "./Hero.css";
 
@@ -8,7 +9,13 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero__inner">
         <div className="hero__frame">
-          <img className="hero__background" src={heroBackground} alt="Inspired by the Round Square" />
+          <img
+            className="hero__background"
+            src={heroBackground}
+            alt="The IDEALS grow out of the Round Square guiding principles"
+          />
+
+          <HeroPhilosophy variant="overlay" />
 
           {pillars.map((pillar) => (
             <Link
