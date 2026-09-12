@@ -154,6 +154,7 @@ export const pillars = [
           "Democracy/Alumni/Alumni-gathering-Democracy.jpg",
           "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-1.jpg",
           "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-2.jpg",
+          "Democracy/Alumni/David-Mulandi-Leaving-a-Legacy-Talk.mp4",
         ],
       },
       { slug: "parents", label: "Parents", placeholder: true, media: [] },
