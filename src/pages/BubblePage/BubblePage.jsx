@@ -1,13 +1,21 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import MediaGrid from "../../components/MediaGrid/MediaGrid";
+import InspiredFeature from "../../components/InspiredFeature/InspiredFeature";
 import { getBubble } from "../../data/ideals";
 import "./BubblePage.css";
 
 export default function BubblePage() {
   const { pillarSlug, bubbleSlug } = useParams();
-  const { pillar, bubble } = getBubble(pillarSlug, bubbleSlug);
+
+  const pSlug = pillarSlug?.trim().toLowerCase();
+  const bSlug = bubbleSlug?.trim().toLowerCase();
+
+  const { pillar, bubble } = getBubble(pSlug, bSlug);
 
   if (!pillar || !bubble) return <Navigate to="/" replace />;
+
+  const showInspiredFeature =
+    pSlug === "internationalism" && bSlug === "governance";
 
   return (
     <section className="container bubble-page">
@@ -19,11 +27,15 @@ export default function BubblePage() {
 
       <h1 style={{ color: `var(${pillar.accentVar})` }}>{bubble.label}</h1>
 
-      <MediaGrid
-        items={bubble.media}
-        accentVar={pillar.accentVar}
-        label={bubble.label}
-      />
+      {showInspiredFeature ? (
+        <InspiredFeature />
+      ) : (
+        <MediaGrid
+          items={bubble.media}
+          accentVar={pillar.accentVar}
+          label={bubble.label}
+        />
+      )}
     </section>
   );
 }
