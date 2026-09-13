@@ -18,17 +18,35 @@ export default function InspiredFeature() {
       aria-labelledby="inspired-feature-heading"
     >
       <div className="inspired-feature__logos">
-        <img
-          src={roundsquare}
-          alt="Round Square"
-          className="inspired-feature__logo"
-        />
+        <a
+          href="https://www.roundsquare.org/"
+          target="_blank"
+          rel="noreferrer"
+          className="navbar__logo-link"
+          aria-label="Round Square (opens in new tab)"
+        >
+          <img
+            src={roundsquare}
+            alt="Round Square"
+            className="inspired-feature__logo"
+          />
+        </a>
         <span className="inspired-feature__divider" aria-hidden="true" />
-        <img
-          src={inspired}
-          alt="Inspired Education"
-          className="inspired-feature__logo"
-        />
+
+        {/* link to inspired education */}
+        <a
+          href="https://www.inspirededu.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="navbar__logo-link"
+          aria-label="Inspired Education (opens in new tab)"
+        >
+          <img
+            src={inspired}
+            alt="Inspired Education"
+            className="inspired-feature__logo"
+          />
+        </a>
       </div>
 
       <h2 id="inspired-feature-heading" className="inspired-feature__heading">
