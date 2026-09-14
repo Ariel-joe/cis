@@ -150,6 +150,10 @@ export const pillars = [
         label: "Alumni",
         placeholder: true,
         media: [
+          "Democracy/Alumni/Graduating-Class-2026-Hats-Throw.jpg",
+          "Democracy/Alumni/Graduating-Class-2026-Hood-Back.jpg",
+          "Democracy/Alumni/Graduating-Class-2026-Hood-Front.jpg",
+          "Democracy/Alumni/Graduating-Class-2026.jpg",
           "Democracy/Alumni/Alumni-gathering-Democracy.jpg",
           "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-1.jpg",
           "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-2.jpg",
