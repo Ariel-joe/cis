@@ -34,6 +34,10 @@ export default function NavBar() {
             />
           </Link>
         </div>
+
+        <div>
+          <h4>Community Voice Showcase</h4>
+        </div>
         <a
           href="https://www.inspirededu.com/"
           target="_blank"
