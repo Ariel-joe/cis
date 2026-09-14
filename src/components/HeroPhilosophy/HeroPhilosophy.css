@@ -60,7 +60,7 @@
    the letters and the captions. Bump middle up if you widen
    the band (either by lowering the letters or the caption row). */
 .hero-philosophy--overlay .hero-philosophy__text {
-  font-size: clamp(0.7rem, 1.15vw, 0.92rem);
+  font-size: clamp(1.2rem, 1.15vw, 0.92rem);
   line-height: 1.5;
   font-weight: 500;
   text-align: justify;
