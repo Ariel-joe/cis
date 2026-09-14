@@ -74,13 +74,13 @@ export const pillars = [
         label: "Alumni",
         placeholder: false,
         media: [
-          "Internationalism/Alumni-matters/Angela-Mpuga,-Leila-Mandala,-Nyakara-Morara,-Christopher-Waititu.jpg",
           "Internationalism/Alumni-matters/Branson-Kyalo,-Tyler-Belyon,-Beverly-Sikueya,-Samantha-Muthui,-Tephila-Chege,-Angela-Njagi.jpg",
-          "Internationalism/Alumni-matters/Netwon-Mpuga,-Lydia-Kiagi,-Madeleine-Kipngetich,-Hera-Odeny.jpg",
           "Internationalism/Alumni-matters/Rita-Kihuria,-Jenna-Ndungi,-Megany-Sikueya,-Chemtai-Sittoni,-Lia-Ounda,-Lisa-Okello.jpg",
-          "Internationalism/Alumni-matters/University-Locations-2025.png",
+          "Internationalism/Alumni-matters/Angela-Mpuga,-Leila-Mandala,-Nyakara-Morara,-Christopher-Waititu.jpg",
+          "Internationalism/Alumni-matters/Netwon-Mpuga,-Lydia-Kiagi,-Madeleine-Kipngetich,-Hera-Odeny.jpg",
           "Internationalism/Alumni-matters/University-Locations-2026.png",
           "Internationalism/Alumni-matters/Annual-Brookhouse-Alumni-Gatherings.jpg",
+          "Internationalism/Alumni-matters/University-Locations-2025.png",
         ],
       },
       {
