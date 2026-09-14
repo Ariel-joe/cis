@@ -6,6 +6,8 @@
 .hero-philosophy {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-philosophy__text {
