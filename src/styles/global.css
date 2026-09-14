@@ -33,7 +33,7 @@ h3 {
 
 p {
   margin: 0;
-  max-width: 62ch;
+  /* max-width: 62ch; */
 }
 
 a {

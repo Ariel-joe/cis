@@ -29,7 +29,7 @@ export default function HeroPhilosophy({ variant = "overlay" }) {
         character.
       </p>
       <p className="hero-philosophy__cta">
-        Please click on each IDEAL to see glimpses in how this is achieved
+        Click on each IDEAL to see a glimpse of how this is achieved
         within the Brookhouse Community.
       </p>
     </div>

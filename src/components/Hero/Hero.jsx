@@ -15,8 +15,6 @@ export default function Hero() {
             alt="The IDEALS grow out of the Round Square guiding principles"
           />
 
-          <HeroPhilosophy variant="overlay" />
-
           {pillars.map((pillar) => (
             <Link
               key={pillar.slug}
@@ -40,6 +38,8 @@ export default function Hero() {
               {pillar.title}
             </Link>
           ))}
+
+          <HeroPhilosophy variant="overlay" />
         </div>
       </div>
     </section>

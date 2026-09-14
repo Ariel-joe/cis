@@ -1,7 +1,6 @@
 /* =========================================================
    HERO PHILOSOPHY
    Shared base + two positioning variants (overlay / mobile).
-   All the knobs you'll reach for live in this file.
    ========================================================= */
 
 .hero-philosophy {
@@ -24,17 +23,14 @@
 
 /* =========================================================
    OVERLAY VARIANT — sits absolutely inside .hero__frame,
-   layered on top of the tree image. Desktop only.
-   ========================================================= */
-/* =========================================================
-   OVERLAY VARIANT — sits absolutely inside .hero__frame,
-   layered on top of the tree image. Desktop only.
-   ========================================================= */
-/* =========================================================
-   OVERLAY VARIANT
-   ========================================================= */
-/* =========================================================
-   OVERLAY VARIANT
+   layered on top of the tree image, in the band between the
+   raised IDEALS letters (which now end around 55%) and the
+   caption row (which starts at 86.1% per ideals.js).
+
+   Reading order top-to-bottom in the hero:
+     1. IDEALS letters   (18–55% band)
+     2. Philosophy text  (57–84% band — this component)
+     3. Captions row     (86.1% — heroCaptionTop in ideals.js)
    ========================================================= */
 
 .hero-philosophy--overlay {
@@ -42,68 +38,39 @@
   z-index: 2;
   pointer-events: none;
 
-  /* --- VERTICAL POSITION --- */
-  top: 8%;
+  /* --- KNOB A: TOP ---
+     Just below where the letters end. If you move the letters,
+     nudge this to stay clear. */
+  top: 50%;
 
-  /* --- HORIZONTAL CENTERING --- */
-  left: 0;
-  right: 0;
-  margin-inline: auto;
+  /* --- KNOB B: HORIZONTAL CENTER ---
+     Midpoint of the IDEALS letter row span. */
+  left: 48.4%;
+  transform: translateX(-50%);
 
-  /* --- DESIRED OVERLAY WIDTH --- */
-  width: 90%;
-  max-width: 940px;
-
-  /* --- GAP BETWEEN PARAGRAPH AND CTA --- */
-  gap: 0.6rem;
-}
-
-/* --- OVERRIDE GLOBAL P MAX-WIDTH --- */
-.hero-philosophy--overlay .hero-philosophy__text,
-.hero-philosophy--overlay .hero-philosophy__cta {
-  max-width: none; /* <--- THIS FIXES THE LEFT DRIFT */
+  /* --- KNOB C: WIDTH ---
+     92% matches the IDEALS row width exactly. */
   width: 100%;
-}
 
-.hero-philosophy--overlay .hero-philosophy__text {
-  font-size: clamp(0.85rem, 1.35vw, 1.05rem);
-  line-height: 1.65;
-  font-weight: 500;
-  text-align: center; /* or text-align: justify if preferred */
-}
-
-/* --- MAIN PARAGRAPH ALIGNMENT --- */
-.hero-philosophy--overlay .hero-philosophy__text {
-  font-size: clamp(0.85rem, 1.35vw, 1.05rem);
-  line-height: 1.65;
-  font-weight: 500;
-  
-  /* Center align the text block so short/last lines don't pull the visual weight to the left */
-  text-align: center;
-}
-
-/* --- MAIN PARAGRAPH ALIGNMENT --- */
-.hero-philosophy--overlay .hero-philosophy__text {
-  font-size: clamp(0.85rem, 1.35vw, 1.05rem);
-  line-height: 1.65;
-  font-weight: 500;
-  
-  /* Center align the text block so short/last lines don't pull the visual weight to the left */
-  text-align: center;
+  gap: 0.5rem;
 }
 
 /* --- KNOB F: MAIN PARAGRAPH FONT SIZE (overlay) ---
-   Bump middle (1.35vw) to 1.6vw for larger. */
+   Sized to fit comfortably in the ~27% vertical band between
+   the letters and the captions. Bump middle up if you widen
+   the band (either by lowering the letters or the caption row). */
 .hero-philosophy--overlay .hero-philosophy__text {
-  font-size: clamp(0.85rem, 1.35vw, 1.05rem);
-  line-height: 1.65;
+  font-size: clamp(0.7rem, 1.15vw, 0.92rem);
+  line-height: 1.5;
   font-weight: 500;
-  text-align: center; /* Changed from text-align: justify for cleaner centering */
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
 }
 
 /* --- KNOB G: CTA FONT SIZE (overlay) --- */
 .hero-philosophy--overlay .hero-philosophy__cta {
-  font-size: clamp(0.72rem, 1.15vw, 0.92rem);
+  font-size: clamp(0.62rem, 0.98vw, 0.8rem);
   text-align: center;
 }
 
@@ -115,8 +82,7 @@
 }
 
 /* =========================================================
-   MOBILE VARIANT — plain block section shown below the hero on
-   narrow screens.
+   MOBILE VARIANT
    ========================================================= */
 
 .hero-philosophy--mobile {
@@ -140,38 +106,5 @@
 @media (max-width: 640px) {
   .hero-philosophy--mobile {
     display: flex;
-  }
-}
-
-/* ------------FONT INCREASE ON RESPONSIVE DESIGN ------------ */
-/* Base desktop styles (large screens) */
-.hero-philosophy--overlay .hero-philosophy__text {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  font-weight: 500;
-  text-align: center;
-}
-
-.hero-philosophy--overlay .hero-philosophy__cta {
-  font-size: 0.92rem;
-  text-align: center;
-}
-
-/* Laptops and smaller screens (1200px and below) */
-@media (max-width: 1200px) {
-  .hero-philosophy--overlay .hero-philosophy__text {
-    font-size: 1rem;       /* Bump up for better readability on laptops */
-    line-height: 1.55;
-  }
-  
-  .hero-philosophy--overlay .hero-philosophy__cta {
-    font-size: 0.88rem;
-  }
-}
-
-/* Tablet / small screens before mobile cutoff (900px and below) */
-@media (max-width: 900px) {
-  .hero-philosophy--overlay .hero-philosophy__text {
-    font-size: 0.95rem;
   }
 }

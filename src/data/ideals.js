@@ -59,7 +59,7 @@ export const pillars = [
     heroImage: heroI,
     heroPosition: {
       left: "2.4%",
-      top: "33.2%",
+      top: "2%",
       width: "14.5%",
       height: "37.9%",
     },
@@ -135,7 +135,7 @@ export const pillars = [
     heroImage: heroD,
     heroPosition: {
       left: "14.4%",
-      top: "46.0%",
+      top: "15%",
       width: "16.9%",
       height: "22.4%",
     },
@@ -207,7 +207,7 @@ export const pillars = [
     heroImage: heroE,
     heroPosition: {
       left: "31.2%",
-      top: "43.9%",
+      top: "13%",
       width: "16.0%",
       height: "24.6%",
     },
@@ -266,7 +266,7 @@ export const pillars = [
     heroImage: heroA,
     heroPosition: {
       left: "47.6%",
-      top: "46.5%",
+      top: "15%",
       width: "16.6%",
       height: "21.9%",
     },
@@ -349,7 +349,7 @@ export const pillars = [
     heroImage: heroL,
     heroPosition: {
       left: "63.5%",
-      top: "46.3%",
+      top: "15%",
       width: "17.0%",
       height: "22.2%",
     },
@@ -364,11 +364,11 @@ export const pillars = [
         label: "Alumni",
         placeholder: true,
         media: [
-          "Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png",
           "Leadership/Alumni/Shakinar-Mutulili.mp4",
           "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-for-Jan-2026.png",
           "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-London-for-March-26.png",
           "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-NYC-in-April-2026.png",
+          "Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png",
         ],
       },
       {
@@ -427,7 +427,7 @@ export const pillars = [
     heroImage: heroS,
     heroPosition: {
       left: "79.7%",
-      top: "46.5%",
+      top: "15%",
       width: "14.7%",
       height: "22.0%",
     },
