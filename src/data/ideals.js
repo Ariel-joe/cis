@@ -363,7 +363,13 @@ export const pillars = [
         slug: "alumni",
         label: "Alumni",
         placeholder: true,
-        media: ["Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png"],
+        media: [
+          "Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png",
+          "Leadership/Alumni/Shakinar-Mutulili.mp4",
+          "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-for-Jan-2026.png",
+          "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-London-for-March-26.png",
+          "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-NYC-in-April-2026.png",
+        ],
       },
       {
         slug: "parents",
