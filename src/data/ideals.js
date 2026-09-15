@@ -183,6 +183,7 @@ export const pillars = [
         placeholder: true,
         media: [
           "Democracy/Students/ECAMUN-43rd-photo-1-Learners-voices.jpg",
+          "Democracy/Students/Debate.mp4",
           "Democracy/Students/Brookhouse-Junior-Prep-students-prepare-and-present-a-'Show-and-Tell'-session-to-children-in-schools-from-5-different-continents,-November-2025.jpg",
           "Democracy/Students/Prefect-Application-Learner_s-voice.png",
           "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
@@ -320,6 +321,7 @@ export const pillars = [
           "Adventure/Students/PA-K-Silver-Sagana-Rapids-December-2025.jpg",
           "Adventure/Students/PA-K-Bronze-Ngong-Hills-June-2026.jpg",
           "Adventure/Students/Year-8-Sign-Language.jpg",
+          "Adventure/Students/Nativity-Play.jpg",
           "Adventure/Students/17.jpg",
           "Adventure/Students/20.jpg",
           "Adventure/Students/13.jpg",
