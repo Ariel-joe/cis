@@ -187,7 +187,8 @@ export const pillars = [
           "Democracy/Students/Brookhouse-Junior-Prep-students-prepare-and-present-a-'Show-and-Tell'-session-to-children-in-schools-from-5-different-continents,-November-2025.jpg",
           "Democracy/Students/Prefect-Application-Learner_s-voice.png",
           "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
-          "Democracy/Students/Rika-Reps.jpg",
+          "Democracy/Students/Democratic-Rika-Reps.jpg",
+          "Democracy/Students/MSMUN-February-2026.jpg",
         ],
       },
       {
