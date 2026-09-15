@@ -316,8 +316,9 @@ export const pillars = [
           "Adventure/Students/Secondary-students-perform -The-Master-of-The-Show,-Nov-2025.mp4",
           "Adventure/Students/Brookhouse-student-Trinity-Kamugisha-presents-at-TEDx-in-November-2025.mp4",
           "Adventure/Students/Middle-School-Performance-of-Percy-Jackson--The -Lightning-Thief,-April-2026.mp4",
-          
-          "Adventure/Students/PA-K-Bronze-Ngong-Hills-June-2026",
+          "Adventure/Students/PA-K-Gold-Mt.Kenya-February-2026.jpg",
+          "Adventure/Students/PA-K-Silver-Sagana-Rapids-December-2025.jpg",
+          "Adventure/Students/PA-K-Bronze-Ngong-Hills-June-2026.jpg",
           "Adventure/Students/17.jpg",
           "Adventure/Students/20.jpg",
           "Adventure/Students/13.jpg",
