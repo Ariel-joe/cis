@@ -187,6 +187,7 @@ export const pillars = [
           "Democracy/Students/Brookhouse-Junior-Prep-students-prepare-and-present-a-'Show-and-Tell'-session-to-children-in-schools-from-5-different-continents,-November-2025.jpg",
           "Democracy/Students/Prefect-Application-Learner_s-voice.png",
           "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
+          "Democracy/Students/World-Scholars-Cup-Regional-Round-April-2026.mp4",
           "Democracy/Students/Democratic-Rika-Reps.jpg",
           "Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
           "Democracy/Students/MUN-Training-Session-January-2026.jpg",
