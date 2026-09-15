@@ -392,7 +392,7 @@ export const pillars = [
         ],
       },
       {
-        slug: "students",
+        slug: "students", 
         label: "Students",
         placeholder: true,
         media: [
