@@ -189,6 +189,7 @@ export const pillars = [
           "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
           "Democracy/Students/Democratic-Rika-Reps.jpg",
           "Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
+          "Democracy/Students/MUN-Training-Session-January-2026.jpg",
           "Democracy/Students/ECAMUN-February-2026.jpg",
           "Democracy/Students/MSMUN-February-2026.jpg",
         ],
