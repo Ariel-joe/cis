@@ -186,6 +186,7 @@ export const pillars = [
           "Democracy/Students/Brookhouse-Junior-Prep-students-prepare-and-present-a-'Show-and-Tell'-session-to-children-in-schools-from-5-different-continents,-November-2025.jpg",
           "Democracy/Students/Prefect-Application-Learner_s-voice.png",
           "Democracy/Students/Year-10-Karen-option-form-2025-26-Learners-Voice.png",
+          "Democracy/Students/Rika-Reps.jpg",
         ],
       },
       {
@@ -315,6 +316,8 @@ export const pillars = [
           "Adventure/Students/Secondary-students-perform -The-Master-of-The-Show,-Nov-2025.mp4",
           "Adventure/Students/Brookhouse-student-Trinity-Kamugisha-presents-at-TEDx-in-November-2025.mp4",
           "Adventure/Students/Middle-School-Performance-of-Percy-Jackson--The -Lightning-Thief,-April-2026.mp4",
+          
+          "Adventure/Students/PA-K-Bronze-Ngong-Hills-June-2026",
           "Adventure/Students/17.jpg",
           "Adventure/Students/20.jpg",
           "Adventure/Students/13.jpg",
@@ -392,7 +395,7 @@ export const pillars = [
         ],
       },
       {
-        slug: "students", 
+        slug: "students",
         label: "Students",
         placeholder: true,
         media: [
@@ -400,9 +403,14 @@ export const pillars = [
           "Leadership/Students/Mara-House.jpg",
           "Leadership/Students/Samburu-House.jpg",
           "Leadership/Students/Tsavo-House.JPG",
-          "Leadership/Students/IMG_1858.JPG",
+          "Leadership/Students/Student-Leader's-Assembly.mp4",
+          "Leadership/Students/Prep-Leaders-MCs-during-tea-time-concert.jpg",
           "Leadership/Students/Student-Leaders.JPG",
-          "Leadership/Students/Student-leaders.JPG",
+          "Leadership/Students/Prep-Leaders.jpg",
+          "Leadership/Students/Prep-Leader's-Workshop.jpg",
+          "Leadership/Students/Student-Leaders.JPG",
+          "Leadership/Students/Senior-School-Prefects-Training-at-Lukenya.jpg",
+          "Leadership/Students/Prep-Leader's-Assembly.jpg",
           "Leadership/Students/RIKA-Reps-Term-1-2025.jpg",
         ],
       },

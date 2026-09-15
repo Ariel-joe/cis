@@ -12,14 +12,12 @@
 .hero__frame {
   position: relative;
   display: grid;
-  place-items: center; /* Forces direct overlays to default to dead center */
+  place-items: center;
   width: min(1080px, 100%);
   aspect-ratio: 1463 / 1075;
 }
 
-/* --- KNOB 2: TREE OPACITY ---
-   0.28 is a good default. Higher = tree more visible / harder to read text.
-   Lower = text pops more / tree fades. Try 0.22–0.4 range. */
+/* --- KNOB 2: TREE OPACITY --- */
 .hero__background {
   position: absolute;
   inset: 0;
@@ -60,6 +58,10 @@
   border-radius: 6px;
 }
 
+.hero__captions {
+  display: contents;
+}
+
 .hero__caption {
   position: absolute;
   transform: translateX(-50%);
@@ -79,4 +81,66 @@
 .hero__caption:focus-visible {
   color: var(--color-maroon);
   text-decoration: underline;
+}
+
+/* =========================================================
+   MOBILE (≤640px)
+   .hero__frame becomes a 2-column grid. The tree image spans
+   both columns at the top; letters remain absolutely
+   positioned over it; captions flow into the grid cells below
+   as 3 rows of 2. Works whether or not the JSX has a
+   .hero__captions wrapper — display:contents unwraps it if
+   present, and if absent, captions are already direct
+   children of .hero__frame.
+   ========================================================= */
+@media (max-width: 640px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+
+  .hero__frame {
+    aspect-ratio: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* KNOB M1: row / column gap between caption cells. */
+    gap: 0.5rem 0.75rem;
+    padding: 0.5rem 0.5rem 1rem;
+    place-items: stretch;
+  }
+
+  /* Tree at the top of the grid, spanning both columns. */
+  .hero__background {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 1463 / 1075;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / -1;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Letters keep absolute positioning; they sit over the tree at
+     their percentage-based positions. On narrow screens they'll be
+     small but still visible. */
+  .hero__captions {
+    display: contents;
+  }
+
+  .hero__caption {
+    position: static;
+    transform: none;
+    /* KNOB M2: mobile caption font size. */
+    font-size: 0.9rem;
+    /* KNOB M3: vertical padding for comfortable tap targets (~44px). */
+    padding-block: 0.75rem;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  .hero__caption:hover,
+  .hero__caption:focus-visible {
+    background: rgba(122, 31, 43, 0.08);
+    text-decoration: none;
+  }
 }

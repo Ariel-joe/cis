@@ -16,11 +16,13 @@
   margin: 0;
 }
 
+
 .hero-philosophy__cta {
   font-family: var(--font-body);
   font-style: italic;
   color: var(--color-ink-soft);
   margin: 0;
+  font-size: 0.99rem; /* Adjust slightly up or down (e.g., 0.9rem to 1rem) */
 }
 
 /* =========================================================
