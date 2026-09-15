@@ -319,6 +319,7 @@ export const pillars = [
           "Adventure/Students/PA-K-Gold-Mt.Kenya-February-2026.jpg",
           "Adventure/Students/PA-K-Silver-Sagana-Rapids-December-2025.jpg",
           "Adventure/Students/PA-K-Bronze-Ngong-Hills-June-2026.jpg",
+          "Adventure/Students/Year-8-Sign-Language.jpg",
           "Adventure/Students/17.jpg",
           "Adventure/Students/20.jpg",
           "Adventure/Students/13.jpg",
