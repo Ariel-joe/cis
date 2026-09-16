@@ -337,6 +337,7 @@ export const pillars = [
           "Adventure/Students/Year-8-Sign-Language.jpg",
           "Adventure/Students/Nativity-Play.jpg",
           "Adventure/Students/Ice-Skating-Year-1.jpg",
+          "Adventure/Students/ELS-Kindi-Athletics.jpg",
           "Adventure/Students/Secondary-Sports.jpg",
           "Adventure/Students/Tea-Time-Concert.mp4",
           "Adventure/Students/17.jpg",
