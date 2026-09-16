@@ -1,0 +1,62 @@
+.pillar-page {
+  padding-block: 1.75rem 3rem;
+}
+
+.pillar-page__crumb {
+  margin-bottom: 1.5rem;
+}
+
+.pillar-page__crumb a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+
+.pillar-page__header {
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.pillar-page__header h1 {
+  font-size: var(--step-3);
+  margin: 0;
+}
+
+.pillar-page__header p {
+  max-width: 60ch;
+  color: var(--color-ink-soft);
+  font-size: var(--step-0);
+}
+
+.pillar-page__siblings {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.pillar-page__sibling {
+  --accent: var(--color-maroon);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.55;
+  transition: opacity 150ms ease;
+}
+
+.pillar-page__sibling:hover,
+.pillar-page__sibling.is-active {
+  opacity: 1;
+  background: var(--accent);
+  color: var(--color-paper);
+}

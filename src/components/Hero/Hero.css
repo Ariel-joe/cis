@@ -1,0 +1,146 @@
+.hero {
+  padding-block: clamp(1.5rem, 4vw, 3rem) 1rem;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- KNOB 1: HERO SIZE ---
+   Change 1080px to scale the whole hero. Bigger = 1200px, smaller = 960px. */
+.hero__frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(1080px, 100%);
+  aspect-ratio: 1463 / 1075;
+}
+
+/* --- KNOB 2: TREE OPACITY --- */
+.hero__background {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.28;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__letter {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero__letter img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.hero__letter:hover img,
+.hero__letter:focus-visible img {
+  transform: translateY(-4px) scale(1.04);
+  filter: drop-shadow(0 8px 14px rgba(32, 26, 20, 0.35));
+}
+
+.hero__letter:focus-visible {
+  outline: 2px solid var(--color-maroon);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.hero__captions {
+  display: contents;
+}
+
+.hero__caption {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: clamp(1.0rem, 1.6vw, 0.95rem);
+  color: var(--color-ink);
+  z-index: 1;
+  transition: color 150ms ease;
+}
+
+.hero__caption:hover,
+.hero__caption:focus-visible {
+  color: var(--color-maroon);
+  text-decoration: underline;
+}
+
+/* =========================================================
+   MOBILE (≤640px)
+   .hero__frame becomes a 2-column grid. The tree image spans
+   both columns at the top; letters remain absolutely
+   positioned over it; captions flow into the grid cells below
+   as 3 rows of 2. Works whether or not the JSX has a
+   .hero__captions wrapper — display:contents unwraps it if
+   present, and if absent, captions are already direct
+   children of .hero__frame.
+   ========================================================= */
+@media (max-width: 640px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+
+  .hero__frame {
+    aspect-ratio: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* KNOB M1: row / column gap between caption cells. */
+    gap: 0.5rem 0.75rem;
+    padding: 0.5rem 0.5rem 1rem;
+    place-items: stretch;
+  }
+
+  /* Tree at the top of the grid, spanning both columns. */
+  .hero__background {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 1463 / 1075;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / -1;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Letters keep absolute positioning; they sit over the tree at
+     their percentage-based positions. On narrow screens they'll be
+     small but still visible. */
+  .hero__captions {
+    display: contents;
+  }
+
+  .hero__caption {
+    position: static;
+    transform: none;
+    /* KNOB M2: mobile caption font size. */
+    font-size: 0.9rem;
+    /* KNOB M3: vertical padding for comfortable tap targets (~44px). */
+    padding-block: 0.75rem;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  .hero__caption:hover,
+  .hero__caption:focus-visible {
+    background: rgba(122, 31, 43, 0.08);
+    text-decoration: none;
+  }
+}
