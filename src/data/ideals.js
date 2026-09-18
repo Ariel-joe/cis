@@ -119,6 +119,8 @@ export const pillars = [
         label: "Staff",
         placeholder: false,
         media: [
+          "Internationalism/Staff-rsis/Round-Square-IDEALS.jpg",
+          "Internationalism/Staff-rsis/Minutes-of-Meeting-Extract,-Heads-of-Year-with-CMT,-Sep-2026.png",
           "Internationalism/Staff-rsis/IMG_0768.jpeg",
           "Internationalism/Staff-rsis/IMG_1503.jpeg",
         ],
