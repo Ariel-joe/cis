@@ -358,3 +358,41 @@
   }
   /* Spinner rotation is kept — the motion is meaningful, not decorative. */
 }
+
+/* =========================================================
+   INFINITE-SCROLL SENTINEL
+   Renders below the grid whenever there are more items to
+   load. Its intersection with the viewport is what triggers
+   the next batch. The spinner sits inside it so users see a
+   subtle "loading..." cue during the load-in.
+   ========================================================= */
+
+.media-grid__sentinel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  min-height: 60px;
+}
+
+.media-grid__sentinel-spinner {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2.5px solid var(--color-parchment-line);
+  border-top-color: var(--color-maroon);
+  animation: media-grid-sentinel-spin 0.8s linear infinite;
+}
+
+@keyframes media-grid-sentinel-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-grid__sentinel-spinner {
+    animation-duration: 2.5s;
+  }
+}

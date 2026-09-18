@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import "./MediaGrid.css";
 
+const BATCH_SIZE = 4;
+
 /* Guess a filename from a src URL/path — used as a caption fallback so
    every tile has something readable at the bottom even if `caption`
    wasn't set in the data. */
@@ -275,6 +277,54 @@ export default function MediaGrid({ items, accentVar, label }) {
   const [openItem, setOpenItem] = useState(null);
   const closeLightbox = useCallback(() => setOpenItem(null), []);
 
+  /* Infinite-scroll batching: only the first N items render on mount, and
+     each time the sentinel below the grid scrolls into view we bump N
+     by BATCH_SIZE. The sentinel is removed once every item is visible.
+     This keeps the initial paint fast on bubble pages with 8-12+ items. */
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+  const sentinelRef = useRef(null);
+
+  /* Reset visibleCount whenever the item list changes (e.g. navigating
+     between bubbles); otherwise scrolling a long page and then jumping
+     to a shorter one leaves visibleCount stuck at the old value. */
+  useEffect(() => {
+    setVisibleCount(BATCH_SIZE);
+  }, [items]);
+
+  const totalCount = items ? items.length : 0;
+  const hasMore = visibleCount < totalCount;
+
+  /* Observe the sentinel: when it enters the viewport, load the next
+     batch. rootMargin gives us a ~200px head start so the next tiles
+     start loading before the spinner actually reaches the viewport.
+
+     Re-runs on every visibleCount change so that when a new batch
+     renders and the sentinel is STILL in view (short pages, tall
+     viewports), the next batch loads too. Without this the loader
+     would stall after the first batch on any page where the sentinel
+     stays visible. */
+  useEffect(() => {
+    if (!hasMore) return undefined;
+    const node = sentinelRef.current;
+    if (!node) return undefined;
+    if (typeof IntersectionObserver === "undefined") {
+      setVisibleCount(totalCount);
+      return undefined;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, totalCount));
+          }
+        });
+      },
+      { rootMargin: "200px 0px" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [hasMore, totalCount, visibleCount]);
+
   if (!items || items.length === 0) {
     const emptyStyle = accentVar
       ? { "--empty-accent": "var(" + accentVar + ")" }
@@ -307,11 +357,12 @@ export default function MediaGrid({ items, accentVar, label }) {
   }
 
   const normalized = items.map(normalizeItem);
+  const visible = normalized.slice(0, visibleCount);
 
   return (
     <>
       <div className="media-grid">
-        {normalized.map((item, i) => {
+        {visible.map((item, i) => {
           if (item.type === "image") {
             return (
               <ImageTile key={i} item={item} onOpen={() => setOpenItem(item)} />
@@ -325,6 +376,18 @@ export default function MediaGrid({ items, accentVar, label }) {
           return <DocumentTile key={i} item={item} />;
         })}
       </div>
+
+      {hasMore && (
+        <div
+          ref={sentinelRef}
+          className="media-grid__sentinel"
+          aria-live="polite"
+          aria-label="Loading more items"
+        >
+          <span className="media-grid__sentinel-spinner" aria-hidden="true" />
+        </div>
+      )}
+
       <Lightbox
         key={openItem ? openItem.src : "closed"}
         item={openItem}
