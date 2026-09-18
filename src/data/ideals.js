@@ -198,7 +198,7 @@ export const pillars = [
           "Democracy/Students/World-Scholars-Cup-Finals-Yale-University,-November-2025.jpg",
           "Democracy/Students/MUN-Training-Session-January-2026.jpg",
           "Democracy/Students/East-And-Central-Africa-Model-United-Nations-2026.jpg",
-          "Democracy/Students/Prefect-Application-Learner_s-voice.png"
+          "Democracy/Students/Prefect-Application-Learner_s-voice.png",
         ],
       },
       {
@@ -487,6 +487,7 @@ export const pillars = [
         label: "Parents",
         placeholder: false,
         media: [
+          "Service/BSPTA/Brookhouse-Parents-Fundraise-and-Complete-Renovations-at-Brookhouse-Partner-School,-Oltepesi-Primary-School,-Sep-2026.png",
           "Service/BSPTA/IMG_0848.jpg",
           "Service/BSPTA/IMG_0860.jpg",
           "Service/BSPTA/IMG_0988.jpg",
