@@ -163,10 +163,10 @@ export const pillars = [
         label: "Parents",
         placeholder: true,
         media: [
+          "Democracy/Parents/Brookhouse-Parent-Mrs-Bangura,-General-Secretary-of-UN,-Presents-at-Brookhouse-Graduation-Ceremony,-2026.jpg",
           "Democracy/Parents/BSPTA-AGM-Agenda-October-2025.png",
           "Democracy/Parents/BSPTA-AGM-Letter-October-2025.png",
           "Democracy/Parents/BSPTA-whatsapp-forum.png",
-          "Democracy/Parents/Brookhouse-Parent-Mrs-Bangura,-General-Secretary-of-UN,-Presents-at-Brookhouse-Graduation-Ceremony,-2026.jpg",
         ],
       },
       {
@@ -187,7 +187,6 @@ export const pillars = [
         media: [
           "Democracy/Students/Debate.mp4",
           "Democracy/Students/RIKA-Reps-Term-1-2025.jpg",
-          "Democracy/Students/Prefect-Application-Learner_s-voice.png",
           "Democracy/Students/Democratic-Rika-Reps.jpg",
           "Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
           "Democracy/Students/MUN-Training-Session-January-2026.jpg",
@@ -199,6 +198,7 @@ export const pillars = [
           "Democracy/Students/World-Scholars-Cup-Finals-Yale-University,-November-2025.jpg",
           "Democracy/Students/MUN-Training-Session-January-2026.jpg",
           "Democracy/Students/East-And-Central-Africa-Model-United-Nations-2026.jpg",
+          "Democracy/Students/Prefect-Application-Learner_s-voice.png"
         ],
       },
       {
@@ -439,13 +439,6 @@ export const pillars = [
           "Leadership/Students/Prefects-(Whole-School).JPG",
           "Leadership/Students/Prep-Leaders.jpg",
           "Leadership/Students/Prep-Leader's-Workshop.jpg",
-          "Leadership/Students/Senior-School-Prefects-Training-at-Lukenya.jpg",
-          "Leadership/Students/Prep-Leader's-Assembly.jpg",
-          "Leadership/Students/Student-Leader's-Assembly.mp4",
-          "Leadership/Students/Prep-Leaders-MCs-during-tea-time-concert.jpg",
-          "Leadership/Students/Prep-Leaders.jpg",
-          "Leadership/Students/Prep-Leader's-Workshop.jpg",
-          "Leadership/Students/Prefects-(Whole-School).JPG",
           "Leadership/Students/Senior-School-Prefects-Training-at-Lukenya.jpg",
           "Leadership/Students/Prep-Leader's-Assembly.jpg",
         ],
