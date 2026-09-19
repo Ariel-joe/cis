@@ -187,7 +187,7 @@ export const pillars = [
         label: "Students",
         placeholder: true,
         media: [
-          "Democracy/Students/Debate.mp4",
+          "/Democracy/Students/Debate.mp4",
           "/Democracy/Students/RIKA-Reps-Term-1-2025.jpg",
           "/Democracy/Students/Democratic-Rika-Reps.jpg",
           "/Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
@@ -237,7 +237,6 @@ export const pillars = [
         slug: "Alumni",
         label: "Alumni",
         placeholder: true,
-        media: ["/Environmentalism/Alumni/DR-Sharon-Mulindi-Alumni.png"],
         media: [
           "/Environmentalism/Alumni/Richard-Turere-Lion-Lights.jpg",
           "/Environmentalism/Alumni/Dr-Sharon-Mulindi.jpg",
@@ -413,7 +412,7 @@ export const pillars = [
         label: "Parents",
         placeholder: true,
         media: [
-          "Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg1.png",
+          "/Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg1.png",
           "/Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg2.png",
         ],
       },
@@ -517,7 +516,7 @@ export const pillars = [
         label: "Staff",
         placeholder: false,
         media: [
-          "Service/Educators-and-staff/4Q7A4071.jpg",
+          "/Service/Educators-and-staff/4Q7A4071.jpg",
           "/Service/Educators-and-staff/4Q7A6732.jpg",
           "/Service/Educators-and-staff/4Q7A6779.jpg",
           "/Service/Educators-and-staff/4Q7A6939.jpg",
