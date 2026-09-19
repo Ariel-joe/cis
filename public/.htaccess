@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteBase /brookhouse-cis/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /brookhouse-cis/index.html [L]
