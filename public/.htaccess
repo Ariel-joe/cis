@@ -1,0 +1,85 @@
+# =========================================================
+# Brookhouse IDEALS microsite - Apache config for iPage
+# Site lives at: yourdomain.com/brookhouse-cis/
+# =========================================================
+
+# --- 1. SPA FALLBACK ---
+# Route all non-file, non-directory requests to index.html so
+# React Router can handle client-side routing.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /brookhouse-cis/
+
+  # Don't rewrite requests for actual files or directories.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else -> index.html (React Router picks up the URL).
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# --- 2. MIME TYPES ---
+# Ensure modern web assets are served with correct Content-Type.
+<IfModule mod_mime.c>
+  AddType image/svg+xml               .svg .svgz
+  AddType image/webp                  .webp
+  AddType image/avif                  .avif
+  AddType application/javascript      .js .mjs
+  AddType text/css                    .css
+  AddType application/json            .json
+  AddType application/manifest+json   .webmanifest
+  AddType font/woff                   .woff
+  AddType font/woff2                  .woff2
+  AddType video/mp4                   .mp4
+  AddType video/webm                  .webm
+</IfModule>
+
+# --- 3. COMPRESSION ---
+# Gzip text-based assets — massive savings on JS/CSS/JSON/SVG.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff font/woff2
+</IfModule>
+
+# --- 4. CACHING ---
+# Fingerprinted assets (JS/CSS with hashes in the filename) can cache
+# forever. index.html must NOT cache — it's the entry point that
+# points at whichever new hashed bundle you just deployed.
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Hashed assets — forever
+  <FilesMatch "\.(js|css|woff2|woff|ttf|otf)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Images and video — a week
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|mp4|webm)$">
+    ExpiresDefault "access plus 1 week"
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # HTML — never cache
+  <FilesMatch "\.html$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+# --- 5. SECURITY HEADERS (light touch) ---
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# --- 6. ERROR PAGE ---
+# Route Apache 404s back through the SPA so React Router's own
+# 404 handling (if you add one) takes over.
+ErrorDocument 404 /brookhouse-cis/index.html

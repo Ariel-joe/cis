@@ -6,8 +6,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <BrowserRouter basename="/brookhouse-cis"> */}
-    <BrowserRouter>
+    <BrowserRouter basename="/brookhouse-cis">
       <App />
     </BrowserRouter>
   </StrictMode>,
