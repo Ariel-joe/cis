@@ -683,7 +683,7 @@ export const pillars = [
           },
           {
             src: getAsset(
-              "Adventure/Students/Middle-School-Performance-of-Percy-Jackson--The -Lightning-Thief,-April-2026.mp4",
+              "Adventure/Students/Middle-School-Performance-of-Percy-Jackson--The-Lightning-Thief,-April-2026.mp4",
             ),
             caption:
               "Middle School Performance of Percy Jackson The Lightning Thief, April 2026",
