@@ -244,12 +244,12 @@ export const pillars = [
             ),
             caption: "31st October 2025, Science Fair, Osaka, Japan",
           },
-          {
-            src: getAsset(
-              "Internationalism/Students/Robotics-Challenge,-Beijing,-July-2026.jpeg",
-            ),
-            caption: "Robotics Challenge, Beijing, July 2026",
-          },
+          // {
+          //   src: getAsset(
+          //     "Internationalism/Students/Robotics-Challenge,-Beijing,-July-2026.jpeg",
+          //   ),
+          //   caption: "Robotics Challenge, Beijing, July 2026",
+          // },
           {
             src: getAsset(
               "Internationalism/Students/Student-Conference-in-South-Africa,-March-2026.png",
