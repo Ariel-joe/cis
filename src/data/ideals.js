@@ -589,12 +589,18 @@ export const pillars = [
             ),
             caption: "Minutes of Whole School Staff Meeting No.1 2026 pg2",
           },
-          // {
-          //   src: getAsset(
-          //     "Democracy/Staff/Staff-management-structure-2026-sept-admin.png",
-          //   ),
-          //   caption: "Staff management structure 2026 sept admin",
-          // },
+          {
+            src: getAsset(
+              "Democracy/Staff/Exerpt-From-Email-Review-of-World-Scholars-Trip.png",
+            ),
+            caption: "Exerpt From Email Review of World Scholars Trip",
+          },
+          {
+            src: getAsset(
+              "Democracy/Staff/ECAMUN-Planning-and-Communication.png",
+            ),
+            caption: "ECAMUN Planning and Communication",
+          },
         ],
       },
     ],
@@ -671,6 +677,20 @@ export const pillars = [
               "Environmentalism/Governance/Brookhouse-School-Global-Citizenship-Definition.png",
             ),
             caption: "Global Citizenship",
+          },
+          {
+            src: getAsset(
+              "Environmentalism/Governance/Exerpt-From-Environmental-Health-and-Safety-Policy-(Full-Policy-Located-in-Part-2).png",
+            ),
+            caption:
+              "Exerpt From Environmental Health and Safety Policy (Full Policy Located in Part 2)",
+          },
+          {
+            src: getAsset(
+              "Environmentalism/Governance/Exerpt-From-Health-and-Safety-Policy_Brookhouse-Water-Plants.png",
+            ),
+            caption:
+              "Exerpt From Health and Safety Policy - Brookhouse Water Plants",
           },
         ],
       },
@@ -1057,6 +1077,10 @@ export const pillars = [
             caption: "Responsibility Map",
           },
           {
+            src: getAsset("Leadership/Governance/Management-Structure.png"),
+            caption: "Management Structure",
+          },
+          {
             src: getAsset("Leadership/Governance/Policy-Groups-1_10.png"),
             caption: "Policy Groups 1 10",
           },
@@ -1138,10 +1162,19 @@ export const pillars = [
             src: getAsset("Leadership/Staff/Brookhouse-CIS-Leadership-pg1.png"),
             caption: "Brookhouse CIS Leadership pg1",
           },
-          // {
-          //   src: getAsset("Leadership/Staff/Brookhouse-CIS-Leadership-pg2.png"),
-          //   caption: "Brookhouse CIS Leadership pg2",
-          // },
+          {
+            src: getAsset(
+              "Leadership/Staff/Extract-Minutes-of-Meeting-with-Heads-of-Year,-Cross-Campus.png",
+            ),
+            caption:
+              "Extract Minutes of Meeting with Heads of Year, Cross Campus",
+          },
+          {
+            src: getAsset(
+              "Leadership/Staff/Agenda-For-Head-of-Faculty-Meeting,-Cross-Campus.png",
+            ),
+            caption: "Agenda For Head of Faculty Meeting, Cross Campus",
+          },
         ],
       },
     ],
