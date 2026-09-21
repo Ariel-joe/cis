@@ -1047,7 +1047,27 @@ export const pillars = [
           },
         ],
       },
-      { slug: "students", label: "Students", placeholder: false, media: [] },
+      {
+        slug: "students",
+        label: "Students",
+        placeholder: false,
+        media: [
+          {
+            src: getAsset("Service/students/Brookhouse-Montage-R6.mp4"),
+            caption: "Brookhouse Montage R6",
+          },
+          {
+            src: getAsset("Service/students/Kambui-Service-Project-4.mp4"),
+            caption: "Year 8 Service Learning Project at Kambui School For The Deaf (2026)",
+          },
+          {
+            src: getAsset(
+              "Service/students/Year-12-Service-Project-at-Kiambogo-(2026).mp4",
+            ),
+            caption: "Year 12 Service Learning Project at Kiambogo (2026)",
+          },
+        ],
+      },
       {
         slug: "staff",
         label: "Staff",
