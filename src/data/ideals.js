@@ -200,24 +200,49 @@ export const pillars = [
             ),
             caption: "Chinese Language and Culture Recognition",
           },
-          // {
-          //   src: getAsset(
-          //     "Internationalism/Students/International-Exchange-Student-Refletction.png",
-          //   ),
-          //   caption: "International Exchange Student Reflection",
-          // },
-          // {
-          //   src: getAsset(
-          //     "Internationalism/Students/Brookhouse-Students-Go-On-Exchange,-2026.png",
-          //   ),
-          //   caption: "Brookhouse Students Go On Exchange, 2026",
-          // },
           {
             src: getAsset(
-              "Internationalism/Students/Brookhouse-Hosts-1200-Students-From-Over-50-Countries-for-Round-Square-International-Conference,-Oct-2023.mp4",
+              "Internationalism/Students/2nd-14th-Nov-2025-World-Scholars-Cup,-Yale-University-USA.jpg",
             ),
             caption:
-              "Brookhouse Hosts 1200 Students From Over 50 Countries for Round Square International Conference, Oct 2023",
+              "2nd-14th Nov 2025 World Scholars Cup, Yale University, USA",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/3rd-April-6th-April-Robotics-Competition,-Greece.jpg",
+            ),
+            caption: "3rd-6th April Robotics Competition, Greece",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/6th-10th-March-2026-Leadership-Conference,-India.jpeg",
+            ),
+            caption: "6th-10th March 2026 Leadership Conference, India",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/11th-June-Group-Exchange-in-Beijing,-China.jpg",
+            ),
+            caption: "11th June Group Exchange in Beijing, China",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/19th-25th-Sep-2025-Round-Square-Event,-Dubai.jpg",
+            ),
+            caption: "19th-25th September 2025, Round Square Event, Dubai",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/25th-March-29th-March,-Round-Square-'Adventure'-in-South-Africa.jpg",
+            ),
+            caption:
+              "25th-29th March, Round Square 'Adventure' in South Africa",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/31st-Oct-2025-Science-Fair,-Osaka,-Japan.jpg",
+            ),
+            caption: "31st October 2025, Science Fair, Osaka, Japan",
           },
           {
             src: getAsset(
