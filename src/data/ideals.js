@@ -447,20 +447,42 @@ export const pillars = [
             src: getAsset("Democracy/Governance/Cross-Campus-Inset-Weeks.png"),
             caption: "Cross Campus Inset Weeks",
           },
-          // {
-          //   src: getAsset(
-          //     "Democracy/Governance/management-structure-2026-sept-karen-devolved-communication.png",
-          //   ),
-          //   caption:
-          //     "management structure 2026 sept karen devolved communication",
-          // },
-          // {
-          //   src: getAsset(
-          //     "Democracy/Governance/management-structure-2026-sept-runda-devolved-communication.png",
-          //   ),
-          //   caption:
-          //     "management structure 2026 sept runda devolved communication",
-          // },
+          {
+            src: getAsset(
+              "Democracy/Governance/Karen-and-Runda-Prep-&-ELS-Term-1-Calendar-2026-2027-Final_page-0001.jpg",
+            ),
+            caption: "Cross-Campus Calendar, Prep and ELS",
+          },
+          {
+            src: getAsset(
+              "Democracy/Governance/Karen-and-Runda-Prep-&-ELS-Term-1-Calendar-2026-2027-Final_page-0002.jpg",
+            ),
+            caption: "Cross-Campus Calendar, Prep and ELS",
+          },
+          {
+            src: getAsset(
+              "Democracy/Governance/Karen-and-Runda-Secondary-Term-1-Calendar-2026-2027-final_page-0001.jpg",
+            ),
+            caption: "Cross-Campus Calendar, Secondary",
+          },
+          {
+            src: getAsset(
+              "Democracy/Governance/Karen-and-Runda-Secondary-Term-1-Calendar-2026-2027-final_page-0002.jpg",
+            ),
+            caption: "Cross-Campus Calendar, Secondary",
+          },
+          {
+            src: getAsset(
+              "Democracy/Governance/schedule-meetings-2026-2027-term-1-combined_page-0001.jpg",
+            ),
+            caption: "Cross-Campus Meeting Schedule",
+          },
+          {
+            src: getAsset(
+              "Democracy/Governance/schedule-assembly-2026-2027-term-1-combined.jpg",
+            ),
+            caption: "Cross-Campus Assembly Schedule",
+          },
         ],
       },
       {
