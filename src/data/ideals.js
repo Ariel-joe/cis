@@ -66,29 +66,27 @@ export const pillars = [
             src: getAsset(
               "Internationalism/Alumni-matters/Branson-Kyalo,-Tyler-Belyon,-Beverly-Sikueya,-Samantha-Muthui,-Tephila-Chege,-Angela-Njagi.jpg",
             ),
-            caption:
-              "Branson Kyalo, Tyler Belyon, Beverly Sikueya, Samantha Muthui, Tephila Chege, Angela Njagi",
+            caption: "Brookhouse Alumni 2026",
           },
-          {
-            src: getAsset(
-              "Internationalism/Alumni-matters/Rita-Kihuria,-Jenna-Ndungi,-Megany-Sikueya,-Chemtai-Sittoni,-Lia-Ounda,-Lisa-Okello.jpg",
-            ),
-            caption:
-              "Rita Kihuria, Jenna Ndungi, Megany Sikueya, Chemtai Sittoni, Lia Ounda, Lisa Okello",
-          },
-          {
-            src: getAsset(
-              "Internationalism/Alumni-matters/Angela-Mpuga,-Leila-Mandala,-Nyakara-Morara,-Christopher-Waititu.jpg",
-            ),
-            caption:
-              "Angela Mpuga, Leila Mandala, Nyakara Morara, Christopher Waititu",
-          },
+          // {
+          //   src: getAsset(
+          //     "Internationalism/Alumni-matters/Rita-Kihuria,-Jenna-Ndungi,-Megany-Sikueya,-Chemtai-Sittoni,-Lia-Ounda,-Lisa-Okello.jpg",
+          //   ),
+          //   caption:
+          //     "Rita Kihuria, Jenna Ndungi, Megany Sikueya, Chemtai Sittoni, Lia Ounda, Lisa Okello",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Internationalism/Alumni-matters/Angela-Mpuga,-Leila-Mandala,-Nyakara-Morara,-Christopher-Waititu.jpg",
+          //   ),
+          //   caption:
+          //     "Angela Mpuga, Leila Mandala, Nyakara Morara, Christopher Waititu",
+          // },
           {
             src: getAsset(
               "Internationalism/Alumni-matters/Netwon-Mpuga,-Lydia-Kiagi,-Madeleine-Kipngetich,-Hera-Odeny.jpg",
             ),
-            caption:
-              "Netwon Mpuga, Lydia Kiagi, Madeleine Kipngetich, Hera Odeny",
+            caption: "Brookhouse Alumni 2026",
           },
           {
             src: getAsset(
@@ -119,13 +117,21 @@ export const pillars = [
             src: getAsset(
               "Internationalism/Parents/Brookhouse-Parent-Provides-Kuwaiti-Workshop.png",
             ),
-            caption: "Brookhouse Parent Provides Kuwaiti Workshop",
+            caption: "Brookhouse Parent Provides Kuwaiti Workshop, 2025",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Parents/Partnership-With-Parents-Ahead-of-University-Applications.png",
+            ),
+            caption:
+              "Partnership With Parents Ahead of University Applications",
           },
           {
             src: getAsset(
               "Internationalism/Parents/Brookhouse-Parents-host-1200-International-Students-2024.mp4",
             ),
-            caption: "Brookhouse Parents host 1200 International Students 2024",
+            caption:
+              "Brookhouse Parents host 1200 International Students, 2024",
           },
         ],
       },
@@ -144,13 +150,13 @@ export const pillars = [
             src: getAsset(
               "Internationalism/Students/Celebrating-International-Day.mp4",
             ),
-            caption: "Celebrating International Day",
+            caption: "Student Celebration of International Day, 2026",
           },
           {
             src: getAsset(
               "Internationalism/Students/U18-Football-Tournament,-Manchester,-U.K-July-2026.jpg",
             ),
-            caption: "U18 Football Tournament, Manchester, U.K, July 2026",
+            caption: "U18 Football Tournament, Manchester, UK, July 2026",
           },
           {
             src: getAsset(
@@ -162,13 +168,31 @@ export const pillars = [
             src: getAsset(
               "Internationalism/Students/Presentation-by-Louisa.jpg",
             ),
-            caption: "Presentation by Louisa",
+            caption: "Brookhouse Exchange London to Nairobi",
           },
           {
             src: getAsset(
-              "Internationalism/Students/Beijing-Robot-Challenge-2026.png",
+              "Internationalism/Students/Brookhouse-Exchange;-Nairobi-Ghana.png",
             ),
-            caption: "Beijing Robot Challenge 2026",
+            caption: "Brookhouse Exchange Nairobi to Ghana",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/Brookhouse-Exchange,-Ghana-to-Nairobi.png",
+            ),
+            caption: "Brookhouse Exchange Ghana to Nairobi",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/Brookhouse-Exchange,-Nairob-Gordonstoun.png",
+            ),
+            caption: "Brookhouse Exchange Nairobi to Gordonstoun",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/Brookhouse-goes-to-Zambia,-2026.png",
+            ),
+            caption: "Brookhouse Exchange Nairobi to Zambia, 2026",
           },
           {
             src: getAsset(
@@ -176,18 +200,18 @@ export const pillars = [
             ),
             caption: "Chinese Language and Culture Recognition",
           },
-          {
-            src: getAsset(
-              "Internationalism/Students/International-Exchange-Student-Refletction.png",
-            ),
-            caption: "International Exchange Student Refletction",
-          },
-          {
-            src: getAsset(
-              "Internationalism/Students/Brookhouse-Students-Go-On-Exchange,-2026.png",
-            ),
-            caption: "Brookhouse Students Go On Exchange, 2026",
-          },
+          // {
+          //   src: getAsset(
+          //     "Internationalism/Students/International-Exchange-Student-Refletction.png",
+          //   ),
+          //   caption: "International Exchange Student Reflection",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Internationalism/Students/Brookhouse-Students-Go-On-Exchange,-2026.png",
+          //   ),
+          //   caption: "Brookhouse Students Go On Exchange, 2026",
+          // },
           {
             src: getAsset(
               "Internationalism/Students/Brookhouse-Hosts-1200-Students-From-Over-50-Countries-for-Round-Square-International-Conference,-Oct-2023.mp4",
@@ -205,7 +229,7 @@ export const pillars = [
             src: getAsset(
               "Internationalism/Students/Student-Conference-in-South-Africa,-March-2026.png",
             ),
-            caption: "Student Conference in South Africa, March 2026",
+            caption: "Brookhouse in South Africa, March 2026",
           },
         ],
       },
@@ -222,36 +246,87 @@ export const pillars = [
           },
           {
             src: getAsset(
+              "Internationalism/Staff-rsis/Communication-With-Parents,-August-2026.png",
+            ),
+            caption: "Communication With Parents, August 2026",
+          },
+          {
+            src: getAsset(
               "Internationalism/Staff-rsis/Year-9-Citizenship-Religions-&-Cultures.jpg",
             ),
-            caption: "Year 9 Citizenship Religions & Cultures",
+            caption: "Celebration of Culture Around the World, Planning (Y9)",
           },
           {
             src: getAsset(
               "Internationalism/Staff-rsis/Yr-13-Citizenship-Faith-&-Religion_page-0001.jpg",
             ),
-            caption: "Year 13 Citizenship Faith & Religion pg 1",
+            caption:
+              "Diversity of Faith and Religion, Global Citizenship Planning (Y13)",
           },
           {
             src: getAsset(
               "Internationalism/Staff-rsis/Yr-13-Citizenship-Faith-&-Religion_page-0002.jpg",
             ),
-            caption: "Year 13 Citizenship Faith & Religion pg 2",
+            caption:
+              "Diversity of Faith and Religion, Global Citizenship Planning (Y13)",
           },
           {
             src: getAsset(
               "Internationalism/Staff-rsis/Minutes-of-Meeting-Extract,-Heads-of-Year-with-CMT,-Sep-2026.png",
             ),
             caption:
-              "Minutes of Meeting Extract, Heads of Year with CMT, Sep 2026",
+              "Planning to Host the UK University Fair, Meeting Minutes from Sep 2026",
           },
           {
             src: getAsset("Internationalism/Staff-rsis/IMG_0768.jpeg"),
-            caption: "IMG 0768",
+            caption: "Staff Plan and Accompany all International Trips",
           },
           {
             src: getAsset("Internationalism/Staff-rsis/IMG_1503.jpeg"),
-            caption: "IMG 1503",
+            caption:
+              "Teachers become Round Square Reps, Leading Groups of Students from Around the World on Trips",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0001.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 1",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0002.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 2",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0003.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 3",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0004.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 4",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0005.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 5",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0006.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 6",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/JSSF-Trip-to-Kyoto,-Japan-Risk-Assessment-Form-2026_page-0007.jpg",
+            ),
+            caption: "JSSF Trip to Kyoto, Japan Risk Assessment Form 2026 pg 7",
           },
         ],
       },
@@ -284,45 +359,52 @@ export const pillars = [
             src: getAsset(
               "Democracy/Alumni/Graduating-Class-2026-Hats-Throw.jpg",
             ),
-            caption: "Graduating Class 2026 Hats Throw",
-          },
-          {
-            src: getAsset(
-              "Democracy/Alumni/Graduating-Class-2026-Hood-Back.jpg",
-            ),
-            caption: "Graduating Class 2026 Hood Back",
-          },
-          {
-            src: getAsset(
-              "Democracy/Alumni/Graduating-Class-2026-Hood-Front.jpg",
-            ),
-            caption: "Graduating Class 2026 Hood Front",
-          },
-          {
-            src: getAsset("Democracy/Alumni/Graduating-Class-2026.jpg"),
             caption: "Graduating Class 2026",
           },
           {
-            src: getAsset("Democracy/Alumni/Alumni-gathering-Democracy.jpg"),
-            caption: "Alumni gathering Democracy",
+            src: getAsset(
+              "Democracy/Alumni/Yale-Engages-Brookhouse-Alumni-2025)-as-a-Trainer-for-the-Yale-Young-African-Scholars.png",
+            ),
+            caption:
+              "Yale Engages Brookhouse Alumni (2025) as a Trainer for the Yale Young African Scholars",
           },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Alumni/Graduating-Class-2026-Hood-Back.jpg",
+          //   ),
+          //   caption: "Graduating Class 2026 Hood Back",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Alumni/Graduating-Class-2026-Hood-Front.jpg",
+          //   ),
+          //   caption: "Graduating Class 2026 Hood Front",
+          // },
+          // {
+          //   src: getAsset("Democracy/Alumni/Graduating-Class-2026.jpg"),
+          //   caption: "Graduating Class 2026",
+          // },
+          // {
+          //   src: getAsset("Democracy/Alumni/Alumni-gathering-Democracy.jpg"),
+          //   caption: "Alumni gathering Democracy",
+          // },
           {
             src: getAsset(
               "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-1.jpg",
             ),
-            caption: "BTEC Enterprise Talk with Alumni Mwanahalima 1",
+            caption: "BTEC Enterprise Talk, Led by Brookhouse Alumni",
           },
-          {
-            src: getAsset(
-              "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-2.jpg",
-            ),
-            caption: "BTEC Enterprise Talk with Alumni Mwanahalima 2",
-          },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Alumni/BTEC-Enterprise-Talk-with-Alumni-Mwanahalima-2.jpg",
+          //   ),
+          //   caption: "BTEC Enterprise Talk with Alumni Mwanahalima 2",
+          // },
           {
             src: getAsset(
               "Democracy/Alumni/David-Mulandi-Leaving-a-Legacy-Talk.mp4",
             ),
-            caption: "David Mulandi Leaving a Legacy Talk",
+            caption: "Legacy Talk by David Mulandi, Brookhouse Alumni",
           },
         ],
       },
@@ -350,10 +432,10 @@ export const pillars = [
             ),
             caption: "BSPTA AGM Letter October 2025",
           },
-          {
-            src: getAsset("Democracy/Parents/BSPTA-whatsapp-forum.png"),
-            caption: "BSPTA whatsapp forum",
-          },
+          // {
+          //   src: getAsset("Democracy/Parents/BSPTA-whatsapp-forum.png"),
+          //   caption: "BSPTA whatsapp forum",
+          // },
         ],
       },
       {
@@ -362,31 +444,23 @@ export const pillars = [
         placeholder: true,
         media: [
           {
-            src: getAsset(
-              "Democracy/Governance/Briefing-Notes-8th-September-2026.png",
-            ),
-            caption: "Briefing Notes 8th September 2026",
+            src: getAsset("Democracy/Governance/Cross-Campus-Inset-Weeks.png"),
+            caption: "Cross Campus Inset Weeks",
           },
-          {
-            src: getAsset(
-              "Democracy/Governance/management-structure-2026-sept-karen-devolved-communication.png",
-            ),
-            caption:
-              "management structure 2026 sept karen devolved communication",
-          },
-          {
-            src: getAsset(
-              "Democracy/Governance/management-structure-2026-sept-runda-devolved-communication.png",
-            ),
-            caption:
-              "management structure 2026 sept runda devolved communication",
-          },
-          {
-            src: getAsset(
-              "Democracy/Governance/Rika-meeting-minutes-8-5-2026-Students-voice.png",
-            ),
-            caption: "Rika meeting minutes 8 5 2026 Students voice",
-          },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Governance/management-structure-2026-sept-karen-devolved-communication.png",
+          //   ),
+          //   caption:
+          //     "management structure 2026 sept karen devolved communication",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Governance/management-structure-2026-sept-runda-devolved-communication.png",
+          //   ),
+          //   caption:
+          //     "management structure 2026 sept runda devolved communication",
+          // },
         ],
       },
       {
@@ -394,34 +468,43 @@ export const pillars = [
         label: "Students",
         placeholder: true,
         media: [
-          { src: getAsset("Democracy/Students/Debate.mp4"), caption: "Debate" },
+          {
+            src: getAsset("Democracy/Students/Debate.mp4"),
+            caption: "Interhouse Debate",
+          },
+          {
+            src: getAsset(
+              "Democracy/Students/Rika-meeting-minutes-8-5-2026-Students-voice.png",
+            ),
+            caption: "Rika meeting minutes, 8-5-2026, Students voice",
+          },
           {
             src: getAsset("Democracy/Students/RIKA-Reps-Term-1-2025.jpg"),
-            caption: "RIKA Reps Term 1 2025",
+            caption: "RIKA Reps, Term 1, 2025",
           },
           {
             src: getAsset("Democracy/Students/Democratic-Rika-Reps.jpg"),
             caption: "Democratic Rika Reps",
           },
-          {
-            src: getAsset(
-              "Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
-            ),
-            caption: "Kai Vladimirou Best Speaker award ECAMUN 2026",
-          },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Students/Kai-Vladimirou-Best-Speaker-award-ECAMUN-2026.jpg",
+          //   ),
+          //   caption: "Kai Vladimirou Best Speaker award ECAMUN, 2026",
+          // },
           {
             src: getAsset(
               "Democracy/Students/MUN-Training-Session-January-2026.jpg",
             ),
-            caption: "MUN Training Session January 2026",
+            caption: "MUN Training Session January, 2026",
           },
           {
             src: getAsset("Democracy/Students/ECAMUN-February-2026.jpg"),
-            caption: "ECAMUN February 2026",
+            caption: "ECAMUN February, 2026",
           },
           {
             src: getAsset("Democracy/Students/MSMUN-February-2026.jpg"),
-            caption: "MSMUN February 2026",
+            caption: "MSMUN February, 2026",
           },
           {
             src: getAsset(
@@ -435,13 +518,13 @@ export const pillars = [
               "Democracy/Students/Brookhouse-Hosts-the-Regional-World-Scholars-Round-April-2026.mp4",
             ),
             caption:
-              "Brookhouse Hosts the Regional World Scholars Round April 2026",
+              "Brookhouse Hosts the Regional World Scholars Round, April 2026",
           },
           {
             src: getAsset(
               "Democracy/Students/World-Scholars-Cup-Semi-Finals-Prague-July-2026.jpg",
             ),
-            caption: "World Scholars Cup Semi Finals Prague July 2026",
+            caption: "World Scholars Cup Semi Finals Prague, July 2026",
           },
           {
             src: getAsset(
@@ -453,13 +536,17 @@ export const pillars = [
             src: getAsset(
               "Democracy/Students/East-And-Central-Africa-Model-United-Nations-2026.jpg",
             ),
-            caption: "East And Central Africa Model United Nations 2026",
+            caption: "East And Central Africa Model United Nations, 2026",
           },
           {
             src: getAsset(
               "Democracy/Students/Prefect-Application-Learner_s-voice.png",
             ),
             caption: "Prefect Application Learner s voice",
+          },
+          {
+            src: getAsset("Democracy/Students/Prep-Leader-Application.png"),
+            caption: "Prep Leader Application",
           },
         ],
       },
@@ -1058,7 +1145,8 @@ export const pillars = [
           },
           {
             src: getAsset("Service/students/Kambui-Service-Project-4.mp4"),
-            caption: "Year 8 Service Learning Project at Kambui School For The Deaf (2026)",
+            caption:
+              "Year 8 Service Learning Project at Kambui School For The Deaf (2026)",
           },
           {
             src: getAsset(
