@@ -657,7 +657,23 @@ export const pillars = [
           },
         ],
       },
-      { slug: "governance", label: "Governance", placeholder: true, media: [] },
+      {
+        slug: "governance",
+        label: "Governance",
+        placeholder: true,
+        media: [
+          {
+            src: getAsset("Environmentalism/Governance/Karen-NEMA-licence.png"),
+            caption: "NEMA licence",
+          },
+          {
+            src: getAsset(
+              "Environmentalism/Governance/Brookhouse-School-Global-Citizenship-Definition.png",
+            ),
+            caption: "Global Citizenship",
+          },
+        ],
+      },
       {
         slug: "students",
         label: "Students",
@@ -665,16 +681,16 @@ export const pillars = [
         media: [
           {
             src: getAsset(
-              "Environmentalism/Students/BRIQUETTES-MAKING-BY-YEAR-6-LEARNERS-pg1.png",
+              "Environmentalism/Students/Making-Briquettes-(Environmental Week).mp4",
             ),
-            caption: "BRIQUETTES MAKING BY YEAR 6 LEARNERS pg1",
+            caption: "Briquettes Making",
           },
-          {
-            src: getAsset(
-              "Environmentalism/Students/BRIQUETTES-MAKING-BY-YEAR-6-LEARNERS-pg2.png",
-            ),
-            caption: "BRIQUETTES MAKING BY YEAR 6 LEARNERS pg2",
-          },
+          // {
+          //   src: getAsset(
+          //     "Environmentalism/Students/BRIQUETTES-MAKING-BY-YEAR-6-LEARNERS-pg2.png",
+          //   ),
+          //   caption: "BRIQUETTES MAKING BY YEAR 6 LEARNERS pg2",
+          // },
           {
             src: getAsset(
               "Environmentalism/Students/Brookhouse-Students-Fundraise-KES-600,000-for-Water-Conservancy-Project-'Hog Charge'-through-sponsorships,-an-Annual-Event-in-Term-2.jpg",
@@ -693,6 +709,11 @@ export const pillars = [
               "Environmentalism/Students/Service-Learning-Activities-in-Prep,-Term-3-2025-26.png",
             ),
             caption: "Service Learning Activities in Prep, Term 3, 2025-26",
+          },
+          {
+            src: getAsset("Environmentalism/Students/scout.png"),
+            caption:
+              "Brookhouse Student become Global Scout Ambassador for Climate Action and Environment",
           },
         ],
       },
@@ -928,12 +949,18 @@ export const pillars = [
             src: getAsset("Adventure/Staff/13.jpg"),
             caption: "Staff Ride With ‘Under 10s’ in Hog Charge Event",
           },
-          { src: getAsset("Adventure/Staff/14.jpg"), caption: "Preparing for Presidential Award, Kenya" },
+          {
+            src: getAsset("Adventure/Staff/14.jpg"),
+            caption: "Preparing for Presidential Award, Kenya",
+          },
           {
             src: getAsset("Adventure/Staff/15.jpg"),
             caption: "Staff on Adventure Day",
           },
-          // { src: getAsset("Adventure/Staff/16.jpg"), caption: "16" },
+          {
+            src: getAsset("Adventure/Staff/ISSK-SCOUTS-CAMPOREE-2026.jpg"),
+            caption: "Organisation of Scouts Camping Trip",
+          },
           // { src: getAsset("Adventure/Staff/17.jpg"), caption: "17" },
         ],
       },
