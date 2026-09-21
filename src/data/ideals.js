@@ -1054,7 +1054,7 @@ export const pillars = [
         media: [
           {
             src: getAsset("Service/students/Brookhouse-Montage-R6.mp4"),
-            caption: "Brookhouse Montage R6",
+            caption: "Year 10 Malewa Trip",
           },
           {
             src: getAsset("Service/students/Kambui-Service-Project-4.mp4"),
