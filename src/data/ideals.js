@@ -1267,6 +1267,20 @@ export const pillars = [
             caption:
               "Christmas Fair to Raise Funding for Service Project, Annual Event",
           },
+          {
+            src: getAsset("Service/students/IMG_3424.jpg"),
+            caption: "Creating Crafts to Sell at the Christmas Fair",
+          },
+          {
+            src: getAsset("Service/students/IMG_9890.jpg"),
+            caption:
+              "Collecting Items at Harvest Festival for Community Partners",
+          },
+          {
+            src: getAsset("Service/students/IMG_9996.jpg"),
+            caption:
+              "Delivering Items to Mogra Children's Home, Term 1 Annually",
+          },
         ],
       },
       {
