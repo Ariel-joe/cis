@@ -564,7 +564,7 @@ export const pillars = [
             src: getAsset(
               "Democracy/Students/Prefect-Application-Learner_s-voice.png",
             ),
-            caption: "Prefect Application Learner s voice",
+            caption: "Secondary Prefect Application",
           },
           {
             src: getAsset("Democracy/Students/Prep-Leader-Application.png"),
@@ -589,12 +589,12 @@ export const pillars = [
             ),
             caption: "Minutes of Whole School Staff Meeting No.1 2026 pg2",
           },
-          {
-            src: getAsset(
-              "Democracy/Staff/Staff-management-structure-2026-sept-admin.png",
-            ),
-            caption: "Staff management structure 2026 sept admin",
-          },
+          // {
+          //   src: getAsset(
+          //     "Democracy/Staff/Staff-management-structure-2026-sept-admin.png",
+          //   ),
+          //   caption: "Staff management structure 2026 sept admin",
+          // },
         ],
       },
     ],
@@ -626,19 +626,23 @@ export const pillars = [
             src: getAsset(
               "Environmentalism/Alumni/Richard-Turere-Lion-Lights.jpg",
             ),
-            caption: "Richard Turere Lion Lights",
+            caption:
+              "Brookhouse Alumni, Richard Turere Invents Method to Save Wildlife and Humans Across Continents.",
           },
           {
             src: getAsset("Environmentalism/Alumni/Dr-Sharon-Mulindi.jpg"),
-            caption: "Dr Sharon Mulindi",
+            caption:
+              "Brookhouse Alumni, Dr Sharon Mulindi, Kenyan Conservationist.",
           },
           {
             src: getAsset("Environmentalism/Alumni/Michelle-Muturi.jpg"),
-            caption: "Michelle Muturi",
+            caption:
+              "Brookhouse Alumni, Michelle Muturi, Environmental Innovator.",
           },
           {
             src: getAsset("Environmentalism/Alumni/Maureen-Some.jpg"),
-            caption: "Maureen Some",
+            caption:
+              "Brookhouse Alumni, Maureen Some, Conservationist and Youth Leader.",
           },
         ],
       },
@@ -688,7 +692,7 @@ export const pillars = [
             src: getAsset(
               "Environmentalism/Students/Service-Learning-Activities-in-Prep,-Term-3-2025-26.png",
             ),
-            caption: "Service Learning Activities in Prep, Term 3 2025 26",
+            caption: "Service Learning Activities in Prep, Term 3, 2025-26",
           },
         ],
       },
@@ -743,19 +747,19 @@ export const pillars = [
         media: [
           {
             src: getAsset("Adventure/Parents/adventure.JPG"),
-            caption: "adventure",
+            caption: "Tree Planting As a Family",
           },
           {
             src: getAsset("Adventure/Parents/IMG_2312.jpg"),
-            caption: "IMG 2312",
+            caption: "Parents Donate Plastic Bottles for Reuse",
           },
           {
             src: getAsset("Adventure/Parents/IMG_3578.jpeg"),
-            caption: "IMG 3578",
+            caption: "PTA Attend Opening Ceremony with a Community Partner",
           },
           {
             src: getAsset("Adventure/Parents/IMG_20231007.jpg"),
-            caption: "IMG 20231007",
+            caption: "Brookhouse Parents Develops Recycling Project",
           },
         ],
       },
