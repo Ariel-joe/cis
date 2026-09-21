@@ -997,34 +997,35 @@ export const pillars = [
         media: [
           {
             src: getAsset("Leadership/Alumni/Shakinar-Mutulili.mp4"),
-            caption: "Shakinar Mutulili",
-          },
-          {
-            src: getAsset(
-              "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-for-Jan-2026.png",
-            ),
-            caption: "Brookhouse Alumni Cocktail Invitation Card for Jan 2026",
-          },
-          {
-            src: getAsset(
-              "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-London-for-March-26.png",
-            ),
             caption:
-              "Brookhouse Alumni Cocktail Invitation Card in London for March 26",
+              "Brookhouse Alumni 2021, Shakinar, Secretary General at EAMUN",
           },
-          {
-            src: getAsset(
-              "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-NYC-in-April-2026.png",
-            ),
-            caption:
-              "Brookhouse Alumni Cocktail Invitation Card in NYC in April 2026",
-          },
-          {
-            src: getAsset(
-              "Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png",
-            ),
-            caption: "Evidence for CIS Inspection Leadership",
-          },
+          // {
+          //   src: getAsset(
+          //     "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-for-Jan-2026.png",
+          //   ),
+          //   caption: "Brookhouse Alumni Cocktail Invitation Card for Jan 2026",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-London-for-March-26.png",
+          //   ),
+          //   caption:
+          //     "Brookhouse Alumni Cocktail Invitation Card in London for March 26",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Leadership/Alumni/Brookhouse-Alumni-Cocktail-Invitation-Card-in-NYC-in-April-2026.png",
+          //   ),
+          //   caption:
+          //     "Brookhouse Alumni Cocktail Invitation Card in NYC in April 2026",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Leadership/Alumni/Evidence-for-CIS-Inspection-Leadership.png",
+          //   ),
+          //   caption: "Evidence for CIS Inspection Leadership",
+          // },
         ],
       },
       {
@@ -1042,7 +1043,7 @@ export const pillars = [
             src: getAsset(
               "Leadership/Parents/CIS-Leadership-Evidence-BPSTA-pg2.png",
             ),
-            caption: "CIS Leadership Evidence BPSTA pg2",
+            caption: "Brookhouse Parent, Under-Secretary General, UN",
           },
         ],
       },
@@ -1106,7 +1107,7 @@ export const pillars = [
           },
           {
             src: getAsset("Leadership/Students/Prefects-(Whole-School).JPG"),
-            caption: "Prefects (Whole School)",
+            caption: "Secondary Prefects",
           },
           {
             src: getAsset("Leadership/Students/Prep-Leaders.jpg"),
@@ -1137,10 +1138,10 @@ export const pillars = [
             src: getAsset("Leadership/Staff/Brookhouse-CIS-Leadership-pg1.png"),
             caption: "Brookhouse CIS Leadership pg1",
           },
-          {
-            src: getAsset("Leadership/Staff/Brookhouse-CIS-Leadership-pg2.png"),
-            caption: "Brookhouse CIS Leadership pg2",
-          },
+          // {
+          //   src: getAsset("Leadership/Staff/Brookhouse-CIS-Leadership-pg2.png"),
+          //   caption: "Brookhouse CIS Leadership pg2",
+          // },
         ],
       },
     ],
@@ -1173,7 +1174,7 @@ export const pillars = [
               "Service/Alumni/Kenyan-Entrepreneur-Turns-Plastic-Bottles-Into-Eco-Bricks.mp4",
             ),
             caption:
-              "Kenyan Entrepreneur Turns Plastic Bottles Into Eco Bricks",
+              "Brookhouse Alumni, Michelle Turns Plastic Bottles into Eco Bricks",
           },
           {
             src: getAsset(
@@ -1203,12 +1204,21 @@ export const pillars = [
             caption:
               "Brookhouse Parents Fundraise and Complete Renovations at Brookhouse Partner School, Oltepesi Primary School, Sep 2026",
           },
-          { src: getAsset("Service/BSPTA/IMG_0848.jpg"), caption: "IMG 0848" },
-          { src: getAsset("Service/BSPTA/IMG_0860.jpg"), caption: "IMG 0860" },
-          { src: getAsset("Service/BSPTA/IMG_0988.jpg"), caption: "IMG 0988" },
+          {
+            src: getAsset("Service/BSPTA/IMG_0848.jpg"),
+            caption:
+              "Brookhouse Parents Fundraise Ksh 9m in 2025 Brookhouse Community Partnership Work",
+          },
+          {
+            src: getAsset("Service/BSPTA/IMG_0860.jpg"),
+            caption:
+              "Brookhouse Parents Fundraise Ksh 6m in 2026 for Brookhouse Community Partnership Work",
+          },
+          // { src: getAsset("Service/BSPTA/IMG_0988.jpg"), caption: "IMG 0988" },
           {
             src: getAsset("Service/BSPTA/Image2026.jpeg"),
-            caption: "Image2026",
+            caption:
+              "Brookhouse Parent Runs Marathons to Support Education for Vulnerable Children",
           },
         ],
       },
@@ -1219,11 +1229,11 @@ export const pillars = [
         media: [
           {
             src: getAsset("Service/CMT-and-Board/4Q7A6670.jpg"),
-            caption: "4Q7A6670",
+            caption: "Brookhouse Board Members Visit Annual Service Project",
           },
           {
             src: getAsset("Service/CMT-and-Board/4Q7A6671.jpg"),
-            caption: "4Q7A6671",
+            caption: "Brookhouse Board Members Visit Annual Service Project",
           },
         ],
       },
@@ -1237,6 +1247,11 @@ export const pillars = [
             caption: "Year 10 Malewa Trip",
           },
           {
+            src: getAsset("Service/students/donations.jpg"),
+            caption:
+              "Donating Christmas Hampers to Vulnerable Communities in Kenya, Annual Project",
+          },
+          {
             src: getAsset("Service/students/Kambui-Service-Project-4.mp4"),
             caption:
               "Year 8 Service Learning Project at Kambui School For The Deaf (2026)",
@@ -1247,6 +1262,11 @@ export const pillars = [
             ),
             caption: "Year 12 Service Learning Project at Kiambogo (2026)",
           },
+          {
+            src: getAsset("Service/students/y-12-service-9.JPG"),
+            caption:
+              "Christmas Fair to Raise Funding for Service Project, Annual Event",
+          },
         ],
       },
       {
@@ -1256,7 +1276,8 @@ export const pillars = [
         media: [
           {
             src: getAsset("Service/Educators-and-staff/4Q7A4071.jpg"),
-            caption: "4Q7A4071",
+            caption:
+              "Teaching and Non-Teaching Staff Assist at Service Projects",
           },
           {
             src: getAsset("Service/Educators-and-staff/4Q7A6732.jpg"),
@@ -1284,30 +1305,30 @@ export const pillars = [
             ),
             caption: "MEETING MINUTES SERVICE COMMITEE",
           },
-          {
-            src: getAsset(
-              "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg1.png",
-            ),
-            caption: "Year 9 Citizenship Schemes of Work pg1",
-          },
-          {
-            src: getAsset(
-              "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg2.png",
-            ),
-            caption: "Year 9 Citizenship Schemes of Work pg2",
-          },
-          {
-            src: getAsset(
-              "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg3.png",
-            ),
-            caption: "Year 9 Citizenship Schemes of Work pg3",
-          },
-          {
-            src: getAsset(
-              "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg4.png",
-            ),
-            caption: "Year 9 Citizenship Schemes of Work pg4",
-          },
+          // {
+          //   src: getAsset(
+          //     "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg1.png",
+          //   ),
+          //   caption: "Year 9 Citizenship Schemes of Work pg1",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg2.png",
+          //   ),
+          //   caption: "Year 9 Citizenship Schemes of Work pg2",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg3.png",
+          //   ),
+          //   caption: "Year 9 Citizenship Schemes of Work pg3",
+          // },
+          // {
+          //   src: getAsset(
+          //     "Service/Educators-and-staff/Year-9-Citizenship-Schemes-of-Work-pg4.png",
+          //   ),
+          //   caption: "Year 9 Citizenship Schemes of Work pg4",
+          // },
           {
             src: getAsset(
               "Service/Educators-and-staff/SOW-Preamble-Year-9-Citizenship.png",
