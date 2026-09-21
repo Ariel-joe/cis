@@ -739,7 +739,19 @@ export const pillars = [
       "A spirit of adventure is characterised by those who <strong>push themselves beyond their perceived limits</strong>, cross boundaries and discover that they are capable of more than they thought. It encompasses preparedness to <strong>take risks, face a challenge and persist against the odds </strong> and in the face of potential failure.Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
     showcaseTitle: "Adventure",
     bubbles: [
-      { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
+      {
+        slug: "alumni",
+        label: "Alumni",
+        placeholder: true,
+        media: [
+          {
+            src: getAsset(
+              "Internationalism/Alumni-matters/University-Locations-2026.png",
+            ),
+            caption: "University Locations 2026",
+          },
+        ],
+      },
       {
         slug: "parents",
         label: "Parents",
@@ -881,12 +893,21 @@ export const pillars = [
             src: getAsset("Adventure/Students/Tea-Time-Concert.mp4"),
             caption: "Tea Time Concert",
           },
-          { src: getAsset("Adventure/Students/17.jpg"), caption: "17" },
-          { src: getAsset("Adventure/Students/20.jpg"), caption: "20" },
-          { src: getAsset("Adventure/Students/13.jpg"), caption: "13" },
-          { src: getAsset("Adventure/Students/21.jpg"), caption: "21" },
-          { src: getAsset("Adventure/Students/19.jpg"), caption: "19" },
-          { src: getAsset("Adventure/Students/22.jpg"), caption: "22" },
+          {
+            src: getAsset("Adventure/Students/17.jpg"),
+            caption: "Hog Charge Participation",
+          },
+          {
+            src: getAsset("Adventure/Students/20.jpg"),
+            caption: "Hiking the Abedares",
+          },
+          // { src: getAsset("Adventure/Students/13.jpg"), caption: "13" },
+          {
+            src: getAsset("Adventure/Students/21.jpg"),
+            caption: "Reception Students Learn How to Ride a Bike",
+          },
+          // { src: getAsset("Adventure/Students/19.jpg"), caption: "19" },
+          // { src: getAsset("Adventure/Students/22.jpg"), caption: "22" },
         ],
       },
       {
@@ -894,13 +915,26 @@ export const pillars = [
         label: "Staff",
         placeholder: true,
         media: [
-          { src: getAsset("Adventure/Staff/11.jpg"), caption: "11" },
-          { src: getAsset("Adventure/Staff/12.jpg"), caption: "12" },
-          { src: getAsset("Adventure/Staff/13.jpg"), caption: "13" },
-          { src: getAsset("Adventure/Staff/14.jpg"), caption: "14" },
-          { src: getAsset("Adventure/Staff/15.jpg"), caption: "15" },
-          { src: getAsset("Adventure/Staff/16.jpg"), caption: "16" },
-          { src: getAsset("Adventure/Staff/17.jpg"), caption: "17" },
+          {
+            src: getAsset("Adventure/Staff/11.jpg"),
+            caption:
+              "Staff Lead Prep Students Through Hell’s Gate National Park",
+          },
+          {
+            src: getAsset("Adventure/Staff/12.jpg"),
+            caption: "Staff Preparing Campsite Ahead of Conservation Event",
+          },
+          {
+            src: getAsset("Adventure/Staff/13.jpg"),
+            caption: "Staff Ride With ‘Under 10s’ in Hog Charge Event",
+          },
+          { src: getAsset("Adventure/Staff/14.jpg"), caption: "Preparing for Presidential Award, Kenya" },
+          {
+            src: getAsset("Adventure/Staff/15.jpg"),
+            caption: "Staff on Adventure Day",
+          },
+          // { src: getAsset("Adventure/Staff/16.jpg"), caption: "16" },
+          // { src: getAsset("Adventure/Staff/17.jpg"), caption: "17" },
         ],
       },
     ],
