@@ -54,7 +54,7 @@ export const pillars = [
     heroCaptionLeft: "11.4%",
     accentVar: "--pillar-internationalism",
     summary:
-      "Fostering a global perspective, cross-cultural understanding, and appreciation for diversity among students from over 50 nations.",
+      "A spirit of internationalism is found in those who seek to <strong>discover and embrace the similarities and differences between cultures and nationalities </strong> in ways that promote meaningful and lasting understanding, tolerance and respect. It encompasses an appreciation for the <strong>increasing interconnectedness of the world</strong>, our <strong> greater dependence on the global economy and interdependence as nations </strong> as a result of massively increased commerce and cultural exchange.",
     showcaseTitle: "Internationalism",
     bubbles: [
       {
@@ -148,6 +148,18 @@ export const pillars = [
           },
           {
             src: getAsset(
+              "Internationalism/Students/U18-Football-Tournament,-Manchester,-U.K-July-2026.jpg",
+            ),
+            caption: "U18 Football Tournament, Manchester, U.K, July 2026",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Students/XPA-Basketball-Training-Camp-in-Spain,-July-2026.jpg",
+            ),
+            caption: "XPA Basketball Training Camp in Spain, July 2026",
+          },
+          {
+            src: getAsset(
               "Internationalism/Students/Presentation-by-Louisa.jpg",
             ),
             caption: "Presentation by Louisa",
@@ -210,6 +222,24 @@ export const pillars = [
           },
           {
             src: getAsset(
+              "Internationalism/Staff-rsis/Year-9-Citizenship-Religions-&-Cultures.jpg",
+            ),
+            caption: "Year 9 Citizenship Religions & Cultures",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/Yr-13-Citizenship-Faith-&-Religion_page-0001.jpg",
+            ),
+            caption: "Year 13 Citizenship Faith & Religion pg 1",
+          },
+          {
+            src: getAsset(
+              "Internationalism/Staff-rsis/Yr-13-Citizenship-Faith-&-Religion_page-0002.jpg",
+            ),
+            caption: "Year 13 Citizenship Faith & Religion pg 2",
+          },
+          {
+            src: getAsset(
               "Internationalism/Staff-rsis/Minutes-of-Meeting-Extract,-Heads-of-Year-with-CMT,-Sep-2026.png",
             ),
             caption:
@@ -242,7 +272,7 @@ export const pillars = [
     heroCaptionLeft: "30.1%",
     accentVar: "--pillar-democracy",
     summary:
-      "Encouraging active participation, shared responsibility, and freedom of expression within the school governance and community.",
+      "A spirit of democracy embraces a sense of <strong> equality, fairness, justice and a desire to do what is right </strong> (for the greater good). Freedom of thought and speech are valued and appropriate forums and channels of communication are discovered and explored.",
     showcaseTitle: "Democracy",
     bubbles: [
       {
@@ -475,7 +505,7 @@ export const pillars = [
     heroCaptionLeft: "48.1%",
     accentVar: "--pillar-environmentalism",
     summary:
-      "Building a deep personal awareness of environmental sustainability and ecological responsibility.",
+      "A spirit of environmentalism centres on the significance of<strong> understanding mankind’s place in the universe</strong>, the forces that shape our surroundings and the impact we have on those surroundings. A systems-based appreciation of the interdependence between human beings and the planet highlights the fine balance needed to make that relationship a healthy one.",
     showcaseTitle: "Environmentalism",
     bubbles: [
       {
@@ -593,7 +623,7 @@ export const pillars = [
     heroCaptionLeft: "66.1%",
     accentVar: "--pillar-adventure",
     summary:
-      "Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
+      "A spirit of adventure is characterised by those who <strong>push themselves beyond their perceived limits</strong>, cross boundaries and discover that they are capable of more than they thought. It encompasses preparedness to <strong>take risks, face a challenge and persist against the odds </strong> and in the face of potential failure.Challenging students physically and mentally through outdoor pursuits, expeditions, and experiential learning.",
     showcaseTitle: "Adventure",
     bubbles: [
       { slug: "alumni", label: "Alumni", placeholder: true, media: [] },
@@ -777,7 +807,7 @@ export const pillars = [
     heroCaptionLeft: "80.7%",
     accentVar: "--pillar-leadership",
     summary:
-      "Cultivating self-discipline, initiative, and collaborative skills to guide and serve others effectively.",
+      "A spirit of leadership is found in those whose convictions are rooted in <strong>personal responsibility, kindness and justice </strong>. It recognises that successful leaders are driven by a desire to <strong>be of service to others</strong> and to nurture, guide, develop and help them to improve and succeed.",
     showcaseTitle: "Leadership",
     bubbles: [
       {
@@ -950,7 +980,7 @@ export const pillars = [
     heroCaptionLeft: "93.2%",
     accentVar: "--pillar-service",
     summary:
-      "Committing to community engagement and humanitarian projects locally and internationally, such as Round Square International Service projects.",
+      "A spirit of service celebrates personal development through practical experience bringing sustainable support and benefit to others. Keenness and ability to learn in real-world contexts delivers meaningful and lasting value to others as well as to the primary learner. <strong>An understanding and respect for cultural difference develops through shared experience and partnership.</strong>",
     showcaseTitle: "Community Voice Showcase",
     bubbles: [
       {
@@ -1089,8 +1119,6 @@ export const pillars = [
   },
 ];
 
-
- 
 export function getPillar(slug) {
   if (!slug) return undefined;
   return pillars.find(

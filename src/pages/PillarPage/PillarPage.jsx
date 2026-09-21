@@ -19,7 +19,7 @@ export default function PillarPage() {
         <h1 style={{ color: "var(" + pillar.accentVar + ")" }}>
           {pillar.title}
         </h1>
-        <p>{pillar.summary}</p>
+        <p dangerouslySetInnerHTML={{ __html: pillar.summary }} />
       </header>
 
       <FootprintHub pillar={pillar} />
