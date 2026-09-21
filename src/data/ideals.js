@@ -738,6 +738,12 @@ export const pillars = [
             src: getAsset("Environmentalism/Staff/Staff-involvment.png"),
             caption: "Staff involvment",
           },
+          {
+            src: getAsset(
+              "Environmentalism/Staff/Environment-club–Tree-Planting-at-Karura-forest-2024.jpg",
+            ),
+            caption: "Environment Club",
+          },
         ],
       },
     ],
