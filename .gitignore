@@ -4,3 +4,4 @@ distt/
 .env
 /dist.zip
 /distt.zip
+/prod.zip

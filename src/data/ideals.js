@@ -862,7 +862,7 @@ export const pillars = [
             src: getAsset(
               "Adventure/Governance/Director-Visits-Service-Project,-Gifted-a-Goat!.jpg",
             ),
-            caption: "Director Visits Service Project, Gifted a Goat!",
+            caption: "Director Visits Service Project, Gifted a Sheep!",
           },
           {
             src: getAsset(

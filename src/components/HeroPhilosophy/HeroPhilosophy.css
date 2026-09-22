@@ -69,7 +69,7 @@
   font-weight: 500;
   text-align: justify;
   text-align-last: center;
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 /* --- KNOB G: CTA FONT SIZE (overlay) --- */
