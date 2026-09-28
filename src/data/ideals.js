@@ -131,7 +131,7 @@ export const pillars = [
               "Internationalism/Parents/Brookhouse-Parents-host-1200-International-Students-2024.mp4",
             ),
             caption:
-              "Brookhouse Parents host 1200 International Students, 2024",
+              "Brookhouse Parents host 1200 International Students, 2023",
           },
         ],
       },
