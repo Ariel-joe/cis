@@ -244,17 +244,16 @@ export const pillars = [
             ),
             caption: "31st October 2025, Science Fair, Osaka, Japan",
           },
-          // {
-          //   src: getAsset(
-          //     "Internationalism/Students/Robotics-Challenge,-Beijing,-July-2026.jpeg",
-          //   ),
-          //   caption: "Robotics Challenge, Beijing, July 2026",
-          // },
           {
             src: getAsset(
               "Internationalism/Students/Student-Conference-in-South-Africa,-March-2026.png",
             ),
             caption: "Brookhouse in South Africa, March 2026",
+          },
+          {
+            src: getAsset("Internationalism/Students/portugal.mp4"),
+            caption:
+              "Portugal to Nairobi: Prep Exchange Reflection, October 2026",
           },
         ],
       },
@@ -1234,19 +1233,26 @@ export const pillars = [
             caption:
               "Brookhouse Alumni, Michelle Turns Plastic Bottles into Eco Bricks",
           },
-          {
-            src: getAsset(
-              "Service/Alumni/Women-and-Power_ Meet-the-woman-up-cycling-plastic-into-eco-bricks.mp4",
-            ),
-            caption:
-              "Women and Power Meet the woman up cycling plastic into eco bricks",
-          },
+          // {
+          //   src: getAsset(
+          //     "Service/Alumni/Women-and-Power_ Meet-the-woman-up-cycling-plastic-into-eco-bricks.mp4",
+          //   ),
+          //   caption:
+          //     "Women and Power Meet the woman up cycling plastic into eco bricks",
+          // },
           {
             src: getAsset(
               "Service/Alumni/Dr-Sharon-Mulindi-Emergency-Wildlife-Care-Vet-Unit-in-Action!-SAVE-THE-ELEPHANTS.mp4",
             ),
             caption:
               "Dr Sharon Mulindi Emergency Wildlife Care Vet Unit in Action! SAVE THE ELEPHANTS",
+          },
+          {
+            src: getAsset(
+              "Service/Alumni/muturi.mp4",
+            ),
+            caption:
+              "Women and Power: Brookhouse Alumni Michelle Muturi, recycling plastic into eco bricks",
           },
         ],
       },
