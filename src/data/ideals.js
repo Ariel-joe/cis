@@ -759,6 +759,11 @@ export const pillars = [
             caption:
               "Brookhouse Student become Global Scout Ambassador for Climate Action and Environment",
           },
+          {
+            src: getAsset("Environmentalism/Students/showandtell.mp4"),
+            caption:
+              "Worldwide 'Show and Tell' Presentation from Brookhouse Prep, Oct 2026",
+          },
         ],
       },
       {
@@ -1248,9 +1253,7 @@ export const pillars = [
               "Dr Sharon Mulindi Emergency Wildlife Care Vet Unit in Action! SAVE THE ELEPHANTS",
           },
           {
-            src: getAsset(
-              "Service/Alumni/muturi.mp4",
-            ),
+            src: getAsset("Service/Alumni/muturi.mp4"),
             caption:
               "Women and Power: Brookhouse Alumni Michelle Muturi, recycling plastic into eco bricks",
           },
